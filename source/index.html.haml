@@ -1,0 +1,17 @@
+---
+title: DCC
+---
+
+- data.events.each do |event|
+  %div
+    - if event.for
+      %span= event.for
+    %div= event.date
+    %h3= event.title
+    %h5
+      - if event.type === "Bike Ride"
+        %span Starts at
+      = event.location
+    %figure
+      = image_tag event.image
+    %span= event.type
