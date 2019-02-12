@@ -1,0 +1,6 @@
+@mixin h1 {
+  color: $color--hunter;
+  font-size: $font-size--h1-max;
+  text-transform: uppercase;
+  line-height: 1;
+}

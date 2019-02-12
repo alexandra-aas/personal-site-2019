@@ -1,0 +1,34 @@
+// Fonts
+$font--base: 'GT Walsheim Pro Trial';
+$font--headings: 'GTF Adieu Trial';
+
+// Font Sizes
+$font-size--xxs: 14;
+$font-size--xs: 16px;
+$font-size--sm: 18px;
+$font-size--base: 20px;
+$font-size--md: 24px;
+$font-size--lg: 50px;
+$font-size--xl: 70px;
+$font-size--xxl: 100px;
+
+// Font Sizes Applied
+$font-size--h1-max: $font-size--xxl;
+$font-size--h2-max: $font-size--xl;
+
+// Line Heights
+$lh--headings: 1.25;
+$lh--base: 1.5;
+
+// Colors
+$color--white: #FFFFFF;
+$color--black: #000000;
+$color--gray: #7F7D77;
+$color--tan: #F0EEE7;
+$color--dark-tan: #E8E5DC;
+$color--hunter: #183428;
+$color--spruce: #3D5A4E;
+$color--coral: #FFA369;
+
+// Borders
+$border--base: 1px solid rgba($color--black, 0.2);
