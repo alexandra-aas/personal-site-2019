@@ -1,0 +1,42 @@
+$nav-height: 60px;
+
+.nav {
+  background-color: $color--dark-tan;
+  font-family: $font--condensed;
+}
+
+.nav__items {
+  display: flex;
+
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  &:not(:last-of-type) {
+    margin-right: 40px;
+  }
+}
+
+.nav__link {
+  @include h6;
+  color: $color--hunter;
+  display: block;
+  line-height: $nav-height;
+  position: relative;
+
+  &::after {
+    @include position(absolute, null 0 0);
+    background-color: currentColor;
+    content: '';
+    height: 0;
+    transition: height 300ms ease-in-out;
+  }
+
+  &:hover {
+    &::after {
+      height: 4px;
+    }
+  }
+}

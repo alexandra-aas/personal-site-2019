@@ -1,5 +1,6 @@
 // Fonts
 $font--base: 'GT Walsheim Pro Trial';
+$font--condensed: 'Walsheim Condensed';
 $font--headings: 'GTF Adieu Trial';
 
 // Font Sizes
@@ -15,6 +16,7 @@ $font-size--xxl: 100px;
 // Font Sizes Applied
 $font-size--h1-max: $font-size--xxl;
 $font-size--h2-max: $font-size--xl;
+$font-size--h6-max: $font-size--xs;
 
 // Line Heights
 $lh--headings: 1.25;
@@ -32,3 +34,6 @@ $color--coral: #FFA369;
 
 // Borders
 $border--base: 1px solid rgba($color--black, 0.2);
+
+// Sizes
+$container-width: 1300px;
