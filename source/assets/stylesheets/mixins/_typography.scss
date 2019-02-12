@@ -1,11 +1,25 @@
 @mixin h1 {
+  @include margin(0 null);
   color: $color--hunter;
   font-size: $font-size--h1-max;
   text-transform: uppercase;
   line-height: 1;
 }
 
+@mixin h2 {
+
+}
+
+@mixin h3 {
+  @include margin(0 null);
+  font-family: $font--headings;
+  font-size: $font-size--h3-max;
+  font-weight: 400;
+  color: $color--hunter;
+}
+
 @mixin h6 {
+  @include margin(0 null);
   font-size: $font-size--h6-max;
   font-weight: 600;
   letter-spacing: 1px;

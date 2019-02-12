@@ -1,13 +1,14 @@
-- data.events.each do |event|
-  %div
-    - if event.for
-      %span= event.for
-    %div= event.date
-    %h3= event.title
-    %h5
-      - if event.type === "Bike Ride"
-        %span Starts at
-      = event.location
-    %figure
-      = image_tag event.image
-    %span= event.type
+.container
+  - data.events.each do |event|
+    .event
+      - if event.for
+        .event__for= event.for
+      .event__date= event.date
+      %h3.event__title= event.title
+      %p.event__location
+        - if event.type === "Bike Ride"
+          %span Starts at
+        = event.location
+      %figure
+        = image_tag event.image
+      %h6.event__type= event.type

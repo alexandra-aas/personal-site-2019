@@ -1,4 +1,46 @@
 @font-face {
+  font-family: 'Adieu';
+  font-style: normal;
+  font-weight: 400;
+  src: font-url('Adieu-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Adieu';
+  font-style: normal;
+  font-weight: 600;
+  src: font-url('Adieu-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Adieu';
+  font-style: normal;
+  font-weight: 700;
+  src: font-url('Adieu-Black.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Adieu';
+  font-style: italic;
+  font-weight: 700;
+  src: font-url('Adieu-Black-Slanted.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Walsheim';
+  font-style: normal;
+  font-weight: 400;
+  src: font-url('Walsheim-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Walsheim';
+  font-style: normal;
+  font-weight: 500;
+  src: font-url('Walsheim-Medium.otf') format('opentype');
+}
+
+@font-face {
   font-family: 'Walsheim Condensed';
   font-style: normal;
   font-weight: 600;
