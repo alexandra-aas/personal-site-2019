@@ -12,4 +12,5 @@
             %span Starts at
           = event.location
       %figure.event__image{ style: "background-image: url('#{event.image}')"}
-      %h6.event__type= event.type
+      .event__type
+        = partial 'partials/tag', locals: { text: event.type, location: 'left' }

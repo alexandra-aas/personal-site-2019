@@ -1,0 +1,11 @@
+.tag {
+  @include padding(null $spacing--sm);
+  background-color: $color--hunter;
+  border-radius: $border-radius--sm;
+  color: $color--tan;
+  line-height: $spacing--md;
+
+  &.tag--left {
+    border-radius: 0 $border-radius--lg;
+  }
+}

@@ -28,7 +28,6 @@
 
 .event__type {
   @include position(absolute, null null (-$border-width) (-$border-width));
-  @include tag(left);
 }
 
 .event__image {

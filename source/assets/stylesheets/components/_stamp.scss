@@ -8,6 +8,7 @@ $stamp-size: 100px;
   color: $color--hunter;
   display: flex;
   justify-content: center;
+  padding: $spacing--sm;
   text-align: center;
   transform: translateY(50%) rotate(20deg);
 }
