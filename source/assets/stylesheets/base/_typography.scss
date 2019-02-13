@@ -10,6 +10,14 @@ h6 {
   @include h6;
 }
 
+p {
+  @include margin(0 null $spacing--base);
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 a {
   text-decoration: none;
 }

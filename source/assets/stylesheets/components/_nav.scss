@@ -1,21 +1,16 @@
-$nav-height: 60px;
-
 .nav {
   background-color: $color--dark-tan;
   font-family: $font--condensed;
 }
 
 .nav__items {
+  @include list-reset;
   display: flex;
-
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .nav__item {
   &:not(:last-of-type) {
-    margin-right: 40px;
+    margin-right: $spacing--md;
   }
 }
 
@@ -23,7 +18,7 @@ $nav-height: 60px;
   @include h6;
   color: $color--hunter;
   display: block;
-  line-height: $nav-height;
+  line-height: $spacing--lg;
   position: relative;
 
   &::after {
@@ -36,7 +31,7 @@ $nav-height: 60px;
 
   &:hover {
     &::after {
-      height: 4px;
+      height: 2px;
     }
   }
 }

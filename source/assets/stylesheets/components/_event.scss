@@ -1,20 +1,41 @@
 .event {
-  border: $border--base;
+  border: $border;
   border-radius: $border-radius--lg;
-  padding: $spacing--md;
   position: relative;
   width: 25%;
 }
 
+.event__for {
+  @include position(absolute, null 0 100% null);
+}
+
+.event__content {
+  padding: $spacing--md;
+}
+
+.event__date {
+  @include position(absolute, null null 100%);
+  background-color: $color--tan;
+  outline: $spacing--sm solid $color--tan;
+  color: $color--hunter;
+  font-family: $font--headings;
+  transform: translateY(50%);
+}
+
+.event__title {
+  @include margin($spacing--md null $spacing--base);
+}
+
 .event__type {
-  @include margin(null auto);
-  @include padding(null $spacing--sm);
-  @include position(absolute, 100% 0 null);
-  background-color: $color--hunter;
-  border-radius: $border-radius--sm;
-  color: $color--tan;
-  display: inline-block;
-  line-height: $spacing--md;
-  position: relative;
-  text-align: center;
+  @include position(absolute, null null (-$border-width) (-$border-width));
+  @include tag(left);
+}
+
+.event__image {
+  @include figure-reset;
+  @include size(100%, 0);
+  background-color: $color--dark-tan;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 60%;
 }

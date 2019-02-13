@@ -2,8 +2,14 @@ body {
   background-color: $color--tan;
   color: $color--gray;
   font-family: $font--base;
+  font-size: $font-size--base;
+  line-height: $lh--base;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 .container {
