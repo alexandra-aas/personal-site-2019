@@ -1,0 +1,9 @@
+@mixin container {
+  @include margin(null auto);
+  @include padding(null $gutter);
+  max-width: $container-width;
+}
+
+@mixin gutter {
+  @include margin(null $gutter);
+}

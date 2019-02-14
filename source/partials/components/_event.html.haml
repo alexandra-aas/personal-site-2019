@@ -1,0 +1,15 @@
+= link_to event.link, class: 'event' do
+  - if event.for
+    .event__for
+      = partial 'partials/components/stamp', locals: { text: event.for}
+  .event__content
+    .event__date= event.date
+    %h3.event__title= event.title
+    %p.event__location
+      - if event.type === "Bike Ride"
+        %span Starts at
+      = event.location
+  %figure.event__figure
+    .event__image{ style: "background-image: url('#{event.image}')"}
+  .event__type
+    = partial 'partials/components/tag', locals: { text: event.type, location: 'left' }

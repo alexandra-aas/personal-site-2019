@@ -1,0 +1,5 @@
+%section#events.events
+  %h2.events__title 2019 Events
+  .events__content
+    - data.events.each do |event|
+      = partial 'partials/components/event', locals: { event: event }

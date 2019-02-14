@@ -1,0 +1,10 @@
+.events__title {
+  color: $color--hunter;
+  text-align: center;
+}
+
+.events__content {
+  @include container;
+  display: flex;
+  flex-wrap: wrap;
+}
