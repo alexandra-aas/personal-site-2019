@@ -1,14 +1,10 @@
 $events-per-row: 4;
 
 .event {
-  @include gutter;
+  margin-top: ($stamp-size * 0.5) + $spacing--lg;
   position: relative;
-  width: calc(100% / #{$events-per-row} - #{$gutter * 2});
+  width: 23%;
   z-index: 0;
-
-  &:nth-child(n+#{$events-per-row + 1}) {
-    margin-top: ($stamp-size * 0.5) + $spacing--lg;
-  }
 
   &::after {
     @include position(absolute, 0);

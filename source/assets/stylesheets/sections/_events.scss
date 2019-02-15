@@ -1,5 +1,6 @@
 .events__title {
   color: $color--hunter;
+  margin-bottom: 0;
   text-align: center;
 }
 
@@ -7,4 +8,5 @@
   @include container;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }

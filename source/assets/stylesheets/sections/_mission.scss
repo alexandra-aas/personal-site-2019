@@ -1,0 +1,20 @@
+.mission {
+  @include container;
+}
+
+.mission__content {
+  background-color: $color--hunter;
+  border-radius: $border-radius--lg;
+  color: $color--tan;
+  padding: $spacing--xl;
+}
+
+.mission__statement {
+  @include body--lg;
+}
+
+.mission__highlight {
+  background-color: $color--coral;
+  color: $color--hunter;
+  @include padding(null $spacing--sm);
+}

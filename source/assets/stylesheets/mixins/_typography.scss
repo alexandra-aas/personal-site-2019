@@ -7,12 +7,11 @@
 }
 
 @mixin h2 {
-  @include margin(0 null $spacing--xl);
+  @include margin(0 null $spacing--md);
   font-family: $font--headings;
   font-size: $font-size--h2-max;
   font-style: italic;
   font-weight: 700;
-  text-align: center;
 }
 
 @mixin h3 {
@@ -31,4 +30,8 @@
   letter-spacing: 1px;
   line-height: $lh--sm;
   text-transform: uppercase;
+}
+
+@mixin body--lg {
+  font-size: $font-size--body-lg-max;
 }
