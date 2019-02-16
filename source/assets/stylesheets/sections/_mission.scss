@@ -1,20 +1,49 @@
+$mission-padding--lg: $spacing--xl;
+
 .mission {
   @include container;
 }
 
 .mission__content {
-  background-color: $color--hunter;
+  background-color: $color--hunter ;
   border-radius: $border-radius--lg;
   color: $color--tan;
-  padding: $spacing--xl;
+  overflow: hidden;
+  padding: $mission-padding--lg;
+  position: relative;
 }
 
-.mission__statement {
+.mission__statement,
+.mission__attribution {
   @include body--lg;
 }
 
 .mission__highlight {
-  background-color: $color--coral;
-  color: $color--hunter;
   @include padding(null $spacing--sm);
+  background-color: $color--coral;
+  border-radius: $border-radius--lg;
+  color: $color--hunter;
+  display: inline-block;
+  transition: background-color 200ms ease-in-out;
+
+  &:hover {
+    background-color: $color--tan;
+  }
+}
+
+.mission__attribution {
+  max-width: 40%;
+
+  &::before {
+    @include margin($spacing--lg null);
+    @include size($spacing--lg, $spacing--xs);
+    background-color: $color--spruce;
+    content: '';
+    display: block;
+  }
+}
+
+.mission__logo {
+  @include figure-reset;
+  @include position(absolute, null $mission-padding--lg (-$spacing--lg) null);
 }

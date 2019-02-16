@@ -1,5 +1,5 @@
 .tag {
-  @include padding(null $spacing--sm);
+  @include padding(null $spacing--xs);
   background-color: $color--hunter;
   border-radius: $border-radius--sm;
   color: $color--tan;
