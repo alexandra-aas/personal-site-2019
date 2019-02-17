@@ -3,6 +3,10 @@
   font-family: $font--condensed;
 }
 
+.nav__inner {
+  @include container;
+}
+
 .nav__items {
   @include list-reset;
   display: flex;

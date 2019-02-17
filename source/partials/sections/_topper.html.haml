@@ -1,0 +1,10 @@
+%section.topper
+  .topper__logo
+    %h1
+      Dedham
+      %br
+      Cycle
+      %br
+      Club
+  .topper__featured-event
+    = partial 'partials/components/featured_event', locals: { event: data.events.first }

@@ -3,7 +3,9 @@
     .event__for
       = partial 'partials/components/stamp', locals: { text: event.for}
   .event__content
-    .event__date= event.date
+    .event__date
+      = event.month
+      = event.day
     %h3.event__title= event.title
     %p.event__location
       - if event.type === "Bike Ride"

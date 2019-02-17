@@ -1,50 +1,60 @@
 - title: Cider Tasting at Lookout Farm in Natick
-  date: June 8
+  month: June
+  day: 8
+  location: The Key Lot
+  type: Bike Ride
+  linke: https://source.unsplash.com/random
+  image: https://source.unsplash.com/random
+  featured: true
+  for: Adults Only
+- title: Cider Tasting at Lookout Farm in Natick
+  month: June
+  day: 8
   location: The Key Lot
   type: Bike Ride
   linke: https://source.unsplash.com/random
   image: https://source.unsplash.com/random
 - title: Cider Tasting at Lookout Farm in Natick
-  date: June 8
+  month: June
+  day: 8
   location: The Key Lot
   type: Bike Ride
   linke: https://source.unsplash.com/random
   image: https://source.unsplash.com/random
 - title: Cider Tasting at Lookout Farm in Natick
-  date: June 8
-  location: The Key Lot
-  type: Bike Ride
-  linke: https://source.unsplash.com/random
-  image: https://source.unsplash.com/random
-- title: Cider Tasting at Lookout Farm in Natick
-  date: June 8
+  month: June
+  day: 8
   location: The Key Lot
   type: Bike Ride
   for: Adults Only
   linke: https://source.unsplash.com/random
   image: https://source.unsplash.com/random
 - title: Cider Tasting at Lookout Farm in Natick
-  date: June 8
+  month: June
+  day: 8
   location: The Key Lot
   type: Bike Ride
   for: Adults Only
   linke: https://source.unsplash.com/random
   image: https://source.unsplash.com/random
 - title: Cider Tasting at Lookout Farm in Natick
-  date: June 8
+  month: June
+  day: 8
   location: The Key Lot
   type: Bike Ride
   for: Adults Only
   linke: https://source.unsplash.com/random
   image: https://source.unsplash.com/random
 - title: Cider Tasting at Lookout Farm in Natick
-  date: June 8
+  month: June
+  day: 8
   location: The Key Lot
   type: Bike Ride
   linke: https://source.unsplash.com/random
   image: https://source.unsplash.com/random
 - title: Cider Tasting at Lookout Farm in Natick
-  date: June 8
+  month: June
+  day: 8
   location: The Key Lot
   type: Bike Ride
   linke: https://source.unsplash.com/random

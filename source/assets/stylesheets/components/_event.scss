@@ -1,35 +1,13 @@
 $events-per-row: 4;
 
 .event {
+  @include event-border;
   margin-top: ($stamp-size * 0.5) + $spacing--lg;
-  position: relative;
   width: 23%;
-  z-index: 0;
-
-  &::after {
-    @include position(absolute, 0);
-    border: $border;
-    border-radius: $border-radius--lg;
-    content: '';
-    transition: border-color 300ms ease-in-out;
-  }
-
-  &:hover {
-    &::after {
-      border-color: $color--hunter;
-    }
-  }
 }
 
 .event__for {
-  @include position(absolute, null $spacing--base 100% null);
-  transform: translateY(50%) rotate(20deg);
-  transition: transform 100ms ease-in-out;
-  z-index: 1;
-
-  .event:hover & {
-    transform: translateY(50%) rotate(30deg);
-  }
+  @include event-for(event, null $spacing--base 100% null, 0, 50%)
 }
 
 .event__content {
@@ -37,11 +15,10 @@ $events-per-row: 4;
 }
 
 .event__date {
+  @include event-date;
   @include position(absolute, null null 100%);
   background-color: $color--tan;
-  outline: $spacing--xs solid $color--tan;
-  color: $color--hunter;
-  font-family: $font--headings;
+  outline: $border-cover;
   transform: translateY(50%);
   z-index: 1;
 }
@@ -51,7 +28,7 @@ $events-per-row: 4;
 }
 
 .event__location {
-  color: $color--gray;
+  @include event-location;
 }
 
 .event__type {
@@ -59,24 +36,13 @@ $events-per-row: 4;
 }
 
 .event__figure {
-  @include figure-reset;
+  @include event-figure;
   @include size(100%, 0);
-  background-color: $color--dark-tan;
   border-radius: 0 0 $border-radius--lg $border-radius--lg;
-  overflow: hidden;
   padding-bottom: 60%;
-  position: relative;
 }
 
 .event__image {
-  @include position(absolute, 0);
-  background-blend-mode: multiply;
-  background-position: center;
+  @include event-image(event);
   background-size: cover;
-  filter: grayscale(100%);
-  transition: transform 500ms ease-in-out;
-
-  .event:hover & {
-    transform: scale(1.1);
-  }
 }

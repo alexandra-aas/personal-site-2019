@@ -44,6 +44,7 @@ $spacing--xl: 120px;
 // Borders
 $border-width: 1px;
 $border: 1px solid rgba($color--black, 0.2);
+$border-cover: $spacing--xs solid $color--tan;
 
 // Border Radius
 $border-radius--sm: 3px;
@@ -52,3 +53,10 @@ $border-radius--lg: 6px;
 // Sizes
 $container-width: 1600px;
 $stamp-size: 100px;
+
+// Transforms
+$stamp-rotation--before: 20deg;
+$stamp-rotation--after: 380deg;
+
+// Transitions
+$transition--easeInOutBack: cubic-bezier(0.68, -0.55, 0.265, 1.55);

@@ -1,0 +1,6 @@
+.topper {
+  @include container;
+  @include padding(null $spacing--xl);
+  display: flex;
+  justify-content: space-between;
+}

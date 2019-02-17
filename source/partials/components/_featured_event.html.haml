@@ -1,0 +1,21 @@
+= link_to event.link, class: 'featured-event' do
+  - if event.for
+    .featured-event__for
+      = partial 'partials/components/stamp', locals: { text: event.for}
+  .featured-event__content
+    .featured-event__next
+      %h6 Next Event
+    .featured-event__body
+      .featured-event__month
+        = event.month
+      .featured-event__day
+        = event.day
+      %h3.featured-event__title= event.title
+      %p.featured-event__location
+        - if event.type === "Bike Ride"
+          %span Starts at
+        = event.location
+      .featured-event__type
+        = partial 'partials/components/tag', locals: { text: event.type, location: 'center' }
+  %figure.featured-event__figure
+    .featured-event__image{ style: "background-image: url('#{event.image}')"}
