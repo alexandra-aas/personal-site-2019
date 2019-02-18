@@ -1,6 +1,8 @@
 .nav {
+  @include position(fixed, 0 0 null);
   background-color: $color--dark-tan;
   font-family: $font--condensed;
+  z-index: $z-index--nav;
 }
 
 .nav__inner {
@@ -22,7 +24,7 @@
   @include h6;
   color: $color--hunter;
   display: block;
-  line-height: $spacing--lg;
+  line-height: $nav-height;
   position: relative;
 
   &::after {

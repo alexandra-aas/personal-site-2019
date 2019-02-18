@@ -4,6 +4,7 @@ body {
   font-family: $font--base;
   font-size: $font-size--base;
   line-height: $lh--base;
+  padding-top: $nav-height;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }

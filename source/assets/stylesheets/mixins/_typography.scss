@@ -36,3 +36,8 @@
   font-size: $font-size--body-lg-max;
   font-weight: 500;
 }
+
+@mixin body--md {
+  font-size: $font-size--body-md-max;
+  font-weight: 400;
+}

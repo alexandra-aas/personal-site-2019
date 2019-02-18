@@ -5,7 +5,7 @@
 
   &::after {
     @include position(absolute, 0);
-    border: $border;
+    border: $border--thin;
     border-radius: $border-radius--lg;
     content: '';
     transition: border-color 300ms ease-in-out;
