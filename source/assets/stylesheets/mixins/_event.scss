@@ -18,14 +18,15 @@
   }
 }
 
-@mixin event-for($parent-class, $position, $translateX: 0, $translateY: 0, $scale: 1) {
+@mixin event-for($parent-class, $position, $translateX: 0, $translateY: 0) {
   @include position(absolute, $position);
-  transform: translate($translateX, $translateY) rotate($stamp-rotation--before) scale(1);
-  transition: transform 500ms $transition--easeInOutBack;
+  transform: translate($translateX, $translateY) rotate($stamp-rotation--before);
+
   z-index: 1;
 
   .#{$parent-class}:hover & {
-    transform: translate($translateX, $translateY) rotate($stamp-rotation--after) scale($scale);
+    transform: translate($translateX, $translateY) rotate($stamp-rotation--after);
+    transition: transform 500ms $transition--easeInOutBack;
   }
 }
 

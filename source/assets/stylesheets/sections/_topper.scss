@@ -52,3 +52,14 @@
     }
   }
 }
+
+.topper__featured-event {
+  outline: $border-cover;
+  position: relative;
+  z-index: 0;
+}
+
+.topper__lines {
+  @include position(absolute, -$section-spacing $spacing--xl null null);
+  z-index: -1;
+}

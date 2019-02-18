@@ -11,3 +11,5 @@
     = link_to "Read our mission statement", "#mission", class: 'topper__cta'
   .topper__featured-event
     = partial 'partials/components/featured_event', locals: { event: data.events.first }
+    .topper__lines
+      = svg 'lines'

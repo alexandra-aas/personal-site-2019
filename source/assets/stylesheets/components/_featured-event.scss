@@ -7,7 +7,7 @@ $featured-event-figure-width: 300px;
 }
 
 .featured-event__for {
-  @include event-for(featured-event, $spacing--lg 0 null null, 50%, 0, 1.1)
+  @include event-for(featured-event, $spacing--lg 0 null null, 50%, 0)
 }
 
 .featured-event__content {

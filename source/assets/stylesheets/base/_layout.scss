@@ -14,5 +14,5 @@ body {
 }
 
 section {
-  @include margin($spacing--xl null);
+  @include margin($section-spacing null);
 }
