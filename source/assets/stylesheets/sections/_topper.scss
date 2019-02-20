@@ -1,6 +1,6 @@
 .topper {
   @include container;
-  @include padding(null $spacing--xl);
+  @include padding(null $section-padding);
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -60,6 +60,6 @@
 }
 
 .topper__lines {
-  @include position(absolute, -$section-spacing $spacing--xl null null);
+  @include position(absolute, -$section-padding $spacing--xl null null);
   z-index: -1;
 }

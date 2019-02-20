@@ -1,16 +1,7 @@
 $mission-padding--lg: $spacing--xl;
 
 .mission {
-  @include container;
-}
-
-.mission__content {
-  background-color: $color--hunter ;
-  border-radius: $border-radius--lg;
-  color: $color--tan;
-  overflow: hidden;
-  padding: $mission-padding--lg;
-  position: relative;
+  @include reversed-section;
 }
 
 .mission__statement,

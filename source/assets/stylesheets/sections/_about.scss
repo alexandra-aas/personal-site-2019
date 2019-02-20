@@ -1,0 +1,28 @@
+.about__content {
+  @include container;
+  @include padding(null $section-padding);
+}
+
+.about__section {
+  align-items: flex-start;
+  display: flex;
+
+  &:not(:last-of-type) {
+    margin-bottom: $spacing--lg;
+  }
+}
+
+.about__image {
+  margin-right: $spacing--lg;
+  max-width: 700px;
+}
+
+.about__title {
+  color: $color--hunter;
+  text-align: center;
+}
+
+.about__number {
+  @include fancy-number;
+  margin-bottom: $spacing--md
+}

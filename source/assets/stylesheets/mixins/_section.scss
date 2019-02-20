@@ -1,0 +1,9 @@
+@mixin reversed-section {
+  @include container;
+  background-color: $color--hunter ;
+  border-radius: $border-radius--lg;
+  color: $color--tan;
+  overflow: hidden;
+  padding: $section-padding;
+  position: relative;
+}

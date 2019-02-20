@@ -1,10 +1,10 @@
 body {
+  @include padding($nav-height $outer-padding null);
   background-color: $color--tan;
   color: $color--gray;
   font-family: $font--base;
   font-size: $font-size--base;
   line-height: $lh--base;
-  padding-top: $nav-height;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -14,5 +14,5 @@ body {
 }
 
 section {
-  @include margin($section-spacing null);
+  @include margin($section-padding null);
 }
