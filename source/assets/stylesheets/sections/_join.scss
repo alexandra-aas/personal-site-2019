@@ -2,6 +2,14 @@
   @include reversed-section;
 }
 
-.join__content {
+.join__title {
+  @include section-title(true);
+}
+
+.join__text {
   max-width: 40%;
+}
+
+.join__form {
+  margin-top: $spacing--md;
 }

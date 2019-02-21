@@ -1,7 +1,5 @@
 .events__title {
-  color: $color--hunter;
-  margin-bottom: 0;
-  text-align: center;
+  @include section-title;
 }
 
 .events__content {

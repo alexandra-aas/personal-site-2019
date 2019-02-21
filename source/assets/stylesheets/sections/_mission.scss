@@ -4,6 +4,10 @@ $mission-padding--lg: $spacing--xl;
   @include reversed-section;
 }
 
+.mission__title {
+  @include section-title(true);
+}
+
 .mission__statement,
 .mission__attribution {
   @include body--lg;

@@ -18,8 +18,7 @@
 }
 
 .about__title {
-  color: $color--hunter;
-  text-align: center;
+  @include section-title;
 }
 
 .about__number {

@@ -2,8 +2,12 @@ $events-per-row: 4;
 
 .event {
   @include event-border;
-  margin-top: ($stamp-size * 0.5) + $spacing--lg;
+
   width: 23%;
+
+  &:nth-of-type(n+5) {
+    margin-top: ($stamp-size * 0.5) + $spacing--lg;
+  }
 }
 
 .event__for {

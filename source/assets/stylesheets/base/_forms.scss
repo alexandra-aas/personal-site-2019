@@ -1,0 +1,28 @@
+fieldset {
+  border: 0;
+  display: inline-block;
+  padding: 0;
+  position: relative;
+}
+
+input {
+  appearance: none;
+  border: 0;
+  border-radius: $border-radius--lg;
+  height: $spacing--lg;
+}
+
+[type="email"] {
+  @include padding(null $spacing--base);
+  background-color: $color--tan;
+  color: $color--hunter;
+
+  min-width: 500px;
+}
+
+[type="submit"] {
+  @include h6;
+  @include position(absolute, 0 0 null null);
+  background-color: $color--coral;
+  color: $color--hunter;
+}
