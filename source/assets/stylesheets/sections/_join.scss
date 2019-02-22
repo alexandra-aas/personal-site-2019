@@ -1,5 +1,8 @@
 .join {
   @include reversed-section;
+  background-image: image-url('pr-cycle.png');
+  background-repeat: no-repeat;
+  background-position: 90% $spacing--md;
 }
 
 .join__title {

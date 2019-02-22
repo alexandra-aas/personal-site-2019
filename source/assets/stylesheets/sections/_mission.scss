@@ -1,5 +1,3 @@
-$mission-padding--lg: $spacing--xl;
-
 .mission {
   @include reversed-section;
 }
@@ -40,5 +38,5 @@ $mission-padding--lg: $spacing--xl;
 
 .mission__logo {
   @include figure-reset;
-  @include position(absolute, null $mission-padding--lg (-$spacing--lg) null);
+  @include position(absolute, null $section-spacing (-$spacing--lg) null);
 }

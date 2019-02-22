@@ -14,5 +14,9 @@ body {
 }
 
 section {
-  @include margin($section-padding null);
+  @include margin($section-spacing null);
+}
+
+.lines-wrapper {
+  overflow: hidden;
 }

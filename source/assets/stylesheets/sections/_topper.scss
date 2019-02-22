@@ -1,6 +1,6 @@
 .topper {
   @include container;
-  @include padding(null $section-padding);
+  @include padding(null $section-spacing);
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -56,10 +56,9 @@
 .topper__featured-event {
   outline: $border-cover;
   position: relative;
-  z-index: 0;
 }
 
 .topper__lines {
-  @include position(absolute, -$section-padding $spacing--xl null null);
+  @include position(absolute, -$section-spacing $section-spacing null null);
   z-index: -1;
 }
