@@ -12,17 +12,17 @@
 }
 
 .footer__item {
+  @include h6;
   display: inline-block;
 }
 
 .footer__link {
   border-bottom: $border-width--thick solid;
   color: $color--hunter;
-  margin-right: $spacing--xxs;
+  margin-right: $spacing--xs;
+  transition: border-color 300ms ease-in-out;
 
-  .footer__item:not(:last-of-type) & {
-    &::after {
-      content: ',';
-    }
+  &:hover {
+    border-color: $color--coral;
   }
 }
