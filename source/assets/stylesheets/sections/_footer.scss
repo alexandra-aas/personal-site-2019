@@ -1,0 +1,28 @@
+.footer {
+  @include lines($left: $section-spacing * 2);
+  @include padding($spacing--lg null);
+  font-weight: 500;
+  text-align: center;
+}
+
+.footer__list {
+  @include margin(0 null $spacing--xs);
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer__item {
+  display: inline-block;
+}
+
+.footer__link {
+  border-bottom: $border-width--thick solid;
+  color: $color--hunter;
+  margin-right: $spacing--xxs;
+
+  .footer__item:not(:last-of-type) & {
+    &::after {
+      content: ',';
+    }
+  }
+}

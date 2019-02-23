@@ -12,11 +12,3 @@ body {
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
-section {
-  @include margin($section-spacing null);
-}
-
-.lines-wrapper {
-  overflow: hidden;
-}

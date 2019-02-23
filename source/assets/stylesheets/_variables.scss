@@ -45,8 +45,9 @@ $spacing--xl: 120px;
 // Borders
 $border-width--thin: 1px;
 $border-width--thick: 2px;
+$border-width--cover: 10px;
 $border--thin: $border-width--thin solid rgba($color--black, 0.2);
-$border-cover: $spacing--xs solid $color--tan;
+$border-cover: $border-width--cover solid $color--tan;
 
 // Border Radius
 $border-radius--sm: 3px;

@@ -10,7 +10,6 @@
 }
 
 .nav__items {
-  @include container;
   @include margin(0 null);
   display: flex;
   list-style-type: none;

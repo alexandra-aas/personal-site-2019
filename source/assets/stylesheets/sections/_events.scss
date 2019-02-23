@@ -1,3 +1,7 @@
+.events {
+  @include margin($section-spacing null);
+}
+
 .events__title {
   @include section-title;
 }

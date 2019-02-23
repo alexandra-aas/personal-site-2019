@@ -1,0 +1,13 @@
+@mixin lines($right: null, $left: null) {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    @include position(absolute, 0 $right 0 $left);
+    background: image-url('lines.svg') repeat-y;
+    content: '';
+    width: 84px;
+    z-index: -1;
+  }
+}
