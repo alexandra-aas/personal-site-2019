@@ -1,5 +1,5 @@
 body {
-  @include padding($nav-height $outer-padding null);
+  @include padding(null $outer-padding);
   background-color: $color--tan;
   color: $color--gray;
   font-family: $font--base;
