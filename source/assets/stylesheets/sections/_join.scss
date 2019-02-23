@@ -3,6 +3,7 @@
   @include reversed-section;
   background-image: image-url('pr-cycle.png');
   background-repeat: no-repeat;
+  background-size: 50%;
   background-position: 90% $spacing--md;
 }
 
