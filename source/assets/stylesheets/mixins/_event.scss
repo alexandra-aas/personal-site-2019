@@ -37,6 +37,7 @@
 
 @mixin event-location {
   color: $color--gray;
+  font-size: $font-size--sm;
 }
 
 @mixin event-figure {

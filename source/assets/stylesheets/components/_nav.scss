@@ -3,6 +3,7 @@
   @include padding(null $outer-padding);
   background-color: $color--dark-tan;
   display: flex;
+  font-size: $font-size--sm;
   font-family: $font--condensed;
   justify-content: space-between;
   overflow: hidden;

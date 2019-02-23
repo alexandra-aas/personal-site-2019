@@ -1,27 +1,29 @@
 // Fonts
-$font--base: 'Walsheim';
-$font--condensed: 'Walsheim Condensed';
+$font--base: 'Work Sans';
+$font--condensed: 'Adieu';
 $font--headings: 'Adieu';
 
 // Font Sizes
+$font-size--xs: 12px;
 $font-size--sm: 16px;
-$font-size--base: 18px;
+$font-size--base: 20px;
 $font-size--md: 24px;
 $font-size--lg: 50px;
 $font-size--xl: 70px;
-$font-size--xxl: 110px;
+$font-size--xxl: 90px;
 
 // Font Sizes Applied
 $font-size--h1-max: $font-size--xxl;
 $font-size--h2-max: $font-size--xl;
 $font-size--h3-max: $font-size--md;
-$font-size--h6-max: $font-size--sm;
+$font-size--h6: $font-size--xs;
 $font-size--body-lg-max: $font-size--lg;
 $font-size--body-md-max: $font-size--md;
 
 // Line Heights
 $lh--sm: 1.25;
 $lh--base: 1.5;
+$lh--p: 1.6;
 
 // Colors
 $color--white: #FFFFFF;

@@ -1,14 +1,13 @@
 .tag {
-  @include padding(null $spacing--xs);
   background-color: $color--hunter;
   color: $color--tan;
-  line-height: $spacing--md;
+  padding: $spacing--xs $spacing--sm;
 
   &.tag--left {
     border-radius: 0 $border-radius--lg;
   }
 
-  &.tag--centered {
+  &.tag--center {
     border-radius: $border-radius--sm;
   }
 }
