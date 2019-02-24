@@ -1,4 +1,4 @@
-= link_to event.link, class: 'event', target: '_blank' do
+= link_to event.link, class: "event #{ event.for ? 'event--for' : '' }", target: '_blank' do
   - if event.for
     .event__for
       = partial 'partials/components/stamp', locals: { text: event.for}

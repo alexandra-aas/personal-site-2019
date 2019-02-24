@@ -1,11 +1,11 @@
 .topper {
   @include container;
-  @include lines($right: $section-spacing * 2);
+  @include lines($right: $section-spacing--base * 2);
   @include margin($border-width--cover null);
+  @include section-spacing(padding);
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: $section-spacing;
 }
 
 .topper__subhead {

@@ -1,5 +1,6 @@
 .events {
-  @include margin($section-spacing null);
+  @include section-spacing(margin-bottom);
+  @include section-spacing(margin-top);
 }
 
 .events__title {

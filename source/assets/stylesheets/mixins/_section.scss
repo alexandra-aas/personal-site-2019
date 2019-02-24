@@ -4,12 +4,24 @@
   margin-bottom: $spacing--lg;
 }
 
+@mixin section-spacing($property) {
+  #{$property}: $section-spacing--sm;
+
+  @include mq($bp--tablet) {
+    #{$property}: $section-spacing--base;
+  }
+
+  @include mq($bp--desktop) {
+    #{$property}: $section-spacing--lg;
+  }
+}
+
 @mixin reversed-section {
   @include container;
+  @include section-spacing(padding);
   background-color: $color--hunter ;
   border-radius: $border-radius--lg;
   color: $color--tan;
   overflow: hidden;
-  padding: $section-spacing;
   position: relative;
 }

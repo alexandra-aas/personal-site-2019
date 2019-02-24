@@ -1,15 +1,52 @@
+
 $events-per-row: 4;
+$event-margin--sm: $spacing--md;
+$event-margin--lg: $spacing--lg;
 
 .event {
   @include event-border;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 23%;
+  width: 100%;
 
-  &:nth-of-type(n+5) {
-    margin-top: ($stamp-size * 0.5) + $spacing--lg;
+  @include mq(max, $bp--tablet) {
+    width: 100%;
+
+    &:nth-of-type(n+2) {
+      margin-top: $event-margin--sm;
+    }
+
+    &.event--for {
+      margin-top: $stamp-size--half + $event-margin--sm;
+    }
   }
+
+  @include mq($bp--tablet, $bp--desktop) {
+    width: 48%;
+
+    &:nth-of-type(n+3) {
+      margin-top: $stamp-size--half + $event-margin--lg;
+    }
+  }
+
+  @include mq($bp--desktop, $bp--desktop-xl) {
+    width: 31%;
+
+    &:nth-of-type(n+4) {
+      margin-top: $stamp-size--half + $event-margin--lg;
+    }
+  }
+
+  @include mq($bp--desktop-xl) {
+    width: 23%;
+
+    &:nth-of-type(n+5) {
+      margin-top: $stamp-size--half + $event-margin--lg;
+    }
+  }
+
+
 }
 
 .event__for {
