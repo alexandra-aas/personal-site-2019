@@ -3,12 +3,12 @@
   @include reversed-section;
   background-image: image-url('pr-cycle.png');
   background-repeat: no-repeat;
-  background-size: 50%;
-  background-position: 90% $spacing--md;
+  background-size: auto 90%;
+  background-position: 95% bottom;
 }
 
 .join__title {
-  @include section-title(true);
+  margin-bottom: $spacing--sm;
 }
 
 .join__text {

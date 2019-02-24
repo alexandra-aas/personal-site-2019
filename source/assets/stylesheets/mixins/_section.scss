@@ -1,11 +1,7 @@
-@mixin section-title($reversed: false) {
-  @if $reversed {
-    margin-bottom: $spacing--base;
-  } @else {
-    color: $color--hunter;
-    text-align: center;
-    margin-bottom: $spacing--lg;
-  }
+@mixin section-title {
+  color: $color--hunter;
+  text-align: center;
+  margin-bottom: $spacing--lg;
 }
 
 @mixin reversed-section {

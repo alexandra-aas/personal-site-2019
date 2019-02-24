@@ -35,6 +35,7 @@
 @mixin body--lg {
   font-size: $font-size--body-lg-max;
   font-weight: 500;
+  line-height: $lh--base;
 }
 
 @mixin body--md {

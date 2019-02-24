@@ -3,7 +3,7 @@
 }
 
 .mission__title {
-  @include section-title(true);
+  margin-bottom: $spacing--md;
 }
 
 .mission__statement,
@@ -12,15 +12,21 @@
 }
 
 .mission__highlight {
-  @include padding(null $spacing--sm);
+  @include margin(null $spacing--xs);
   background-color: $color--coral;
-  border-radius: $border-radius--lg;
   color: $color--hunter;
-  display: inline-block;
-  transition: background-color 200ms ease-in-out;
+  transition:
+    background-color 300ms ease-in-out,
+    box-shadow 300ms ease-in-out;
+  box-shadow:
+    $spacing--xs 0 0 $color--coral,
+    -$spacing--xs 0 0 $color--coral;
 
   &:hover {
     background-color: $color--tan;
+    box-shadow:
+      $spacing--xs 0 0 $color--tan,
+      -$spacing--xs 0 0 $color--tan;
   }
 }
 
