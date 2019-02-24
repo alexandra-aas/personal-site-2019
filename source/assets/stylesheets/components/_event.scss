@@ -2,6 +2,9 @@ $events-per-row: 4;
 
 .event {
   @include event-border;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 23%;
 
   &:nth-of-type(n+5) {
@@ -27,7 +30,7 @@ $events-per-row: 4;
 }
 
 .event__title {
-  @include margin($spacing--md null $spacing--base);
+  @include margin($spacing--lg null $spacing--base);
 }
 
 .event__location {

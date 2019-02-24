@@ -1,17 +1,21 @@
-= link_to event.link, class: 'event' do
+= link_to event.link, class: 'event', target: '_blank' do
   - if event.for
     .event__for
       = partial 'partials/components/stamp', locals: { text: event.for}
   .event__content
     .event__date
       = event.month
-      = event.day
+      - if event.day
+        = event.day
     %h3.event__title= event.title
     %p.event__location
-      - if event.type === "Bike Ride"
-        %span Starts at
-      = event.location
+      - if event.location
+        - if event.type === "Bike Ride"
+          %span Starts at
+        = event.location
+      - else
+        Location TBD
   %figure.event__figure
-    .event__image{ style: "background-image: url('#{event.image}')"}
+    .event__image{ style: "background-image: url('/assets/images/events/#{event.image}')"}
   .event__type
     = partial 'partials/components/tag', locals: { text: event.type, location: 'left' }

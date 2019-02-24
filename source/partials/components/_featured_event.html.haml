@@ -1,4 +1,4 @@
-= link_to event.link, class: 'featured-event' do
+= link_to event.link, class: 'featured-event', target: '_blank' do
   - if event.for
     .featured-event__for
       = partial 'partials/components/stamp', locals: { text: event.for}
@@ -18,4 +18,4 @@
       .featured-event__type
         = partial 'partials/components/tag', locals: { text: event.type, location: 'center' }
   %figure.featured-event__figure
-    .featured-event__image{ style: "background-image: url('#{event.image}')"}
+    .featured-event__image{ style: "background-image: url('/assets/images/events/#{event.image}')"}

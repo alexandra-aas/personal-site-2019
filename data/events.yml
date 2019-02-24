@@ -1,61 +1,59 @@
-- title: Cider Tasting at Lookout Farm in Natick
-  month: June
-  day: 8
+- title: How to integrate cycling into your commute
+  month: March
+  day: 23
+  type: Presentation
+  link: https://www.eventbrite.com/e/the-dedham-cycle-craze-1880s1970s-today-tickets-57114587268
+  image: brompton.jpg
+- title: The Dedham Cycle Craze - 1880s, 1970s & Today!
+  month: April
+  day: 6
+  location: The Blue Bunny
+  type: Book Talk
+  link: https://www.eventbrite.com/e/the-dedham-cycle-craze-1880s1970s-today-tickets-57114587268
+  image: historical.jpeg
+- title: Prepare your bike for spring at the Fix it Fair
+  month: April
+  day: 13
+  location: Library Main Branch
+  type: Book Talk
+  link: https://www.eventbrite.com/e/the-dedham-cycle-craze-1880s1970s-today-tickets-57114587268
+  image: repair.jpg
+- title: Ride to the Boston Winery via the Neponset Greenway
+  month: April
+  day: 13
   location: The Key Lot
   type: Bike Ride
-  linke: https://source.unsplash.com/random
-  image: https://source.unsplash.com/random
-  featured: true
+  link: https://www.eventbrite.com/e/the-dedham-cycle-craze-1880s1970s-today-tickets-57114587268
+  image: greenway.png
   for: Adults Only
-- title: Cider Tasting at Lookout Farm in Natick
+- title: Ride to Lookout Farm & Brewery in Natick
   month: June
   day: 8
   location: The Key Lot
   type: Bike Ride
-  linke: https://source.unsplash.com/random
-  image: https://source.unsplash.com/random
-- title: Cider Tasting at Lookout Farm in Natick
-  month: June
-  day: 8
+  link: https://www.eventbrite.com/e/the-dedham-cycle-craze-1880s1970s-today-tickets-57114587268
+  image: lookout.png
+  for: All Ages
+- title: Cycling to the movies
+  month: August
+  day: 23
+  type: Movie Night
+  link: https://www.eventbrite.com/e/the-dedham-cycle-craze-1880s1970s-today-tickets-57114587268
+  image: et.jpg
+  for: All Ages
+- title: Mushroom Foraging at the Hale Reservation
+  month: September
+  day: 29
   location: The Key Lot
   type: Bike Ride
-  linke: https://source.unsplash.com/random
-  image: https://source.unsplash.com/random
-- title: Cider Tasting at Lookout Farm in Natick
-  month: June
-  day: 8
+  link: https://www.eventbrite.com/e/the-dedham-cycle-craze-1880s1970s-today-tickets-57114587268
+  image: mushroom.png
+  for: All Ages
+- title: Spooky graveyard crawl with ghost stories & prizes
+  month: October
+  day: 27
   location: The Key Lot
   type: Bike Ride
-  for: Adults Only
-  linke: https://source.unsplash.com/random
-  image: https://source.unsplash.com/random
-- title: Cider Tasting at Lookout Farm in Natick
-  month: June
-  day: 8
-  location: The Key Lot
-  type: Bike Ride
-  for: Adults Only
-  linke: https://source.unsplash.com/random
-  image: https://source.unsplash.com/random
-- title: Cider Tasting at Lookout Farm in Natick
-  month: June
-  day: 8
-  location: The Key Lot
-  type: Bike Ride
-  for: Adults Only
-  linke: https://source.unsplash.com/random
-  image: https://source.unsplash.com/random
-- title: Cider Tasting at Lookout Farm in Natick
-  month: June
-  day: 8
-  location: The Key Lot
-  type: Bike Ride
-  linke: https://source.unsplash.com/random
-  image: https://source.unsplash.com/random
-- title: Cider Tasting at Lookout Farm in Natick
-  month: June
-  day: 8
-  location: The Key Lot
-  type: Bike Ride
-  linke: https://source.unsplash.com/random
-  image: https://source.unsplash.com/random
+  link: https://www.eventbrite.com/e/the-dedham-cycle-craze-1880s1970s-today-tickets-57114587268
+  image: graveyard.png
+  for: All Ages
