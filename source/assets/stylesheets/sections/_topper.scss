@@ -5,7 +5,12 @@
   @include section-indented(true, true);
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+  @include mq($bp--desktop) {
+    flex-direction: row;
+  }
 }
 
 .topper__subhead {
