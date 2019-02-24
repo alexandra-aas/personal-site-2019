@@ -1,5 +1,5 @@
 .join {
-  @include margin($border-width--cover null);
+  @include margin($cover-lines-size null);
   @include section-reversed;
   background-image: image-url('pr-cycle.png');
   background-repeat: no-repeat;

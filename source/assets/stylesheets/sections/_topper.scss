@@ -1,17 +1,22 @@
 .topper {
   @include container;
-  @include margin($border-width--cover null);
+  @include margin($cover-lines-size null);
   @include section-indented;
-  @include section-spacing(margin-top);
-  @include section-spacing(margin-bottom);
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
 
+  @include mq(max, $bp--desktop) {
+    @include section-spacing(margin-top);
+    @include section-spacing(margin-bottom);
+  }
+
   @include mq($bp--desktop) {
     @include lines($right: true, $multiplier: 2);
+    @include section-spacing(padding-top);
+    @include section-spacing(padding-bottom);
     flex-direction: row;
     text-align: left;
   }
@@ -63,8 +68,9 @@
 
 .topper__featured-event {
   margin-top: $spacing--md;
-  
+
   @include mq($bp--desktop) {
-    box-shadow: $border-cover;
+    box-shadow: $box-shadow--cover-lines;
+    margin-left: $spacing--lg;
   }
 }

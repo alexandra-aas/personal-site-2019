@@ -4,7 +4,11 @@ $featured-event-figure-width: 300px;
 .featured-event {
   @include event-border;
 
-  @include mq($bp--tablet) {
+  @include mq(max, $bp--tablet-xl) {
+    position: relative;
+  }
+
+  @include mq($bp--tablet-xl) {
     padding-right: $featured-event-figure-width;
   }
 }
@@ -16,7 +20,7 @@ $featured-event-figure-width: 300px;
 .featured-event__content {
   text-align: center;
 
-  @include mq($bp--tablet) {
+  @include mq($bp--tablet-xl) {
     width: $featured-event-content-width;
   }
 }
@@ -32,10 +36,14 @@ $featured-event-figure-width: 300px;
 }
 
 .featured-event__body {
+  background-color: $color--tan;
   display: flex;
   flex-direction: column;
   padding: $spacing--md $spacing--md $spacing--lg;
-  position: relative;
+
+  @include mq($bp--tablet-xl) {
+    position: relative;
+  }
 }
 
 .featured-event__month {
@@ -49,7 +57,7 @@ $featured-event-figure-width: 300px;
 .featured-event__title {
   @include margin($spacing--base null $spacing--md);
 
-  @include mq($bp--tablet) {
+  @include mq($bp--tablet-xl) {
     margin-bottom: $spacing--xl;
   }
 }
@@ -59,22 +67,28 @@ $featured-event-figure-width: 300px;
 }
 
 .featured-event__type {
-  @include position(absolute, null null 0 50%);
-  box-shadow: $border-cover;
-  transform: translate(-50%, 50%);
+  @include position(absolute, null null 0 0);
+  @include tag(left);
   z-index: 1;
+
+  @include mq($bp--tablet-xl) {
+    @include position(absolute, null null 0 50%);
+    @include tag(center);
+    outline: $outline--cover-lines;
+    transform: translate(-50%, 50%);
+  }
 }
 
 .featured-event__figure {
   @include event-figure;
 
-  @include mq(0, $bp--tablet) {
+  @include mq(0, $bp--tablet-xl) {
     @include border-bottom-radius($border-radius--lg);
     @include size(100%, 0);
     padding-bottom: 60%;
   }
 
-  @include mq($bp--tablet) {
+  @include mq($bp--tablet-xl) {
     @include border-right-radius($border-radius--lg);
     @include position(absolute, 0 0 0 null)
     width: $featured-event-figure-width;
@@ -86,7 +100,7 @@ $featured-event-figure-width: 300px;
   @include size(100%);
   background-size: cover;
 
-  @include mq($bp--tablet) {
+  @include mq($bp--tablet-xl) {
     background-size: contain;
   }
 }

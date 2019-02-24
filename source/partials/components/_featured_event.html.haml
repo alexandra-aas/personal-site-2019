@@ -11,14 +11,13 @@
       .featured-event__day
         = event.day
       %h3.featured-event__title= event.title
-      - if event.location
-        %p.featured-event__location
+      %p.featured-event__location
+        - if event.location        
           - if event.type === "Bike Ride"
             %span Starts at
             = event.location
-          - else
-            Location TBD
-      .featured-event__type
-        = partial 'partials/components/tag', locals: { text: event.type, location: 'center' }
+        - else
+          Location TBD
+      .featured-event__type= event.type
   %figure.featured-event__figure
     .featured-event__image{ style: "background-image: url('/assets/images/events/#{event.image}')"}

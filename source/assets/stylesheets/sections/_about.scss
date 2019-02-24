@@ -43,7 +43,7 @@
   }
 
   @include mq($bp--tablet-xl) {
-    box-shadow: $border-cover;
+    box-shadow: $box-shadow--cover-lines;
     margin-right: $spacing--md;
     width: 30%;
   }
