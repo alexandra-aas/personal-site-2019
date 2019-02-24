@@ -7,6 +7,10 @@ fieldset {
   display: inline-block;
   padding: 0;
   position: relative;
+
+  @include mq(max, $bp--tablet-xl) {
+    width: 100%;
+  }
 }
 
 input {
@@ -21,8 +25,12 @@ input {
   font-size: $font-size--sm;
   font-weight: 500;
   height: $input-height;
-  min-width: 500px;
   outline: none;
+  width: 100%;
+
+  @include mq($bp--tablet-xl) {
+    width: 500px;
+  }
 
   &::placeholder {
     color: $color--hunter;
@@ -40,9 +48,20 @@ input {
 
 [type="submit"] {
   @include button-base;
-  @include padding(null $spacing--sm);
-  @include position(absolute, 0 0 null null);
-  border-radius: $border-radius--sm;
-  height: $submit-height;
-  margin: $submit-spacing;
+
+  @include mq(0, $bp--tablet-xl) {
+    border-radius: $border-radius--lg;
+    height: $input-height;
+    margin-top: $spacing--sm;
+    width: 100%;
+  }
+
+  @include mq($bp--tablet-xl) {
+    @include padding(null $spacing--sm);
+    @include position(absolute, 0 0 null null);
+    border-radius: $border-radius--sm;
+    height: $submit-height;
+    margin: $submit-spacing;
+    width: auto;
+  }
 }

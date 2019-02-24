@@ -3,8 +3,12 @@
   @include reversed-section;
   background-image: image-url('pr-cycle.png');
   background-repeat: no-repeat;
-  background-size: auto 90%;
+  background-size: auto 50%;
   background-position: 95% bottom;
+
+  @include mq($bp--tablet) {
+    background-size: auto 90%;
+  }
 }
 
 .join__title {
@@ -12,7 +16,9 @@
 }
 
 .join__text {
-  max-width: 40%;
+  @include mq($bp--desktop) {
+    max-width: 50%;
+  }
 }
 
 .join__form {
