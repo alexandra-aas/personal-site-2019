@@ -12,3 +12,9 @@ body {
 *, *:before, *:after {
   box-sizing: border-box;
 }
+
+.hidden {
+  @include position(absolute, auto null null -10000px);
+  @include size(1px);
+  overflow:hidden;
+}
