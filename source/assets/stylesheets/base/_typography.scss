@@ -10,8 +10,8 @@ h3 {
   @include h3;
 }
 
-h6 {
-  @include h6;
+h4 {
+  @include h4;
 }
 
 p {
@@ -25,4 +25,9 @@ p {
 
 a {
   text-decoration: none;
+}
+
+small {
+  font-size: $font-size--sm;
+  font-weight: 500;
 }

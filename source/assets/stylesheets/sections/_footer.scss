@@ -12,17 +12,13 @@
 }
 
 .footer__item {
-  @include h6;
   display: inline-block;
+
+  &:not(:last-of-type) {
+    margin-right: $spacing--xs;
+  }
 }
 
 .footer__link {
-  border-bottom: $border-width--thick solid;
-  color: $color--hunter;
-  margin-right: $spacing--xs;
-  transition: border-color 300ms ease-in-out;
-
-  &:hover {
-    border-color: $color--coral;
-  }
+  @include underline-link;
 }

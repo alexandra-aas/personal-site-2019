@@ -22,10 +22,10 @@
   color: $color--hunter;
 }
 
-@mixin h6 {
+@mixin h4 {
   @include margin(0 null);
   font-family: $font--primary;
-  font-size: $font-size--h6;
+  font-size: $font-size--h4;
   font-weight: 600;
   letter-spacing: 1.5px;
   line-height: $lh--sm;

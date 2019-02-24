@@ -44,16 +44,8 @@
 }
 
 .nav__cta {
-  @include h6;
+  @include button-base;
   @include padding(null $spacing--md);
   @include position(absolute, 0 0 null null);
-  background-color: $color--coral;
-  color: $color--hunter;
   line-height: $nav-height;
-  transition: all 300ms ease-in-out;
-
-  &:hover {
-    background-color: $color--hunter;
-    color: $color--coral;
-  }
 }
