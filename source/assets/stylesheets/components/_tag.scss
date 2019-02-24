@@ -4,7 +4,7 @@
   padding: $spacing--xs $spacing--sm;
 
   &.tag--left {
-    border-radius: 0 $border-radius--lg;
+    border-top-right-radius: $border-radius--lg;
   }
 
   &.tag--center {

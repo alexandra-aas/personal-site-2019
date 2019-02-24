@@ -18,7 +18,7 @@ $featured-event-figure-width: 300px;
 .featured-event__next {
   align-items: center;
   background-color: $color--coral;
-  border-radius: $border-radius--lg 0 0 0;
+  border-top-left-radius: $border-radius--lg;
   color: $color--hunter;
   display: flex;
   height: $spacing--md;
@@ -56,9 +56,9 @@ $featured-event-figure-width: 300px;
 }
 
 .featured-event__figure {
+  @include border-right-radius($border-radius--lg);
   @include event-figure;
   @include position(absolute, 0 0 0 null)
-  border-radius: 0 $border-radius--lg $border-radius--lg 0;
   width: $featured-event-figure-width;
 }
 
