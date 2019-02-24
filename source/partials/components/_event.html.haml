@@ -4,9 +4,8 @@
       = partial 'partials/components/stamp', locals: { text: event.for}
   .event__content
     .event__date
-      = event.month
-      - if event.day
-        = event.day
+      = Date.new(event.year, event.month, event.day).strftime('%b')
+      = event.day
     %h3.event__title= event.title
     %p.event__location
       - if event.location

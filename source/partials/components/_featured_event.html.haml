@@ -7,7 +7,7 @@
       %h4 Next Event
     .featured-event__body
       .featured-event__month
-        = event.month
+        = Date.new(event.year, event.month, event.day).strftime('%B')
       .featured-event__day
         = event.day
       %h3.featured-event__title= event.title
