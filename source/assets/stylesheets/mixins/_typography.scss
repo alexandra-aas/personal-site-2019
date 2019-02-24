@@ -1,7 +1,7 @@
 @mixin h1 {
   @include margin(0 null);
   color: $color--hunter;
-  font-family: $font--headings;
+  font-family: $font--primary;
   font-size: $font-size--h1-max;
   text-transform: uppercase;
   line-height: 1;
@@ -9,14 +9,14 @@
 
 @mixin h2 {
   @include margin(0 null);
-  font-family: $font--headings;
+  font-family: $font--primary;
   font-size: $font-size--h2-max;
   font-weight: 700;
 }
 
 @mixin h3 {
   @include margin(0 null);
-  font-family: $font--headings;
+  font-family: $font--primary;
   font-size: $font-size--h3-max;
   font-weight: 400;
   color: $color--hunter;
@@ -24,7 +24,7 @@
 
 @mixin h6 {
   @include margin(0 null);
-  font-family: $font--headings;
+  font-family: $font--primary;
   font-size: $font-size--h6;
   font-weight: 600;
   letter-spacing: 1.5px;
