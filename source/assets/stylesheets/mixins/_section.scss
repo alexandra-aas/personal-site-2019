@@ -1,14 +1,7 @@
-@mixin section-indented($horizontal: false, $vertical: false) {
+@mixin section-indented {
   @include mq($bp--desktop-xl) {
-    @if $horizontal {
-      @include section-spacing(padding-left);
-      @include section-spacing(padding-right);
-    }
-
-    @if $vertical {
-      @include section-spacing(padding-top);
-      @include section-spacing(padding-bottom);
-    }
+    @include section-spacing(padding-left);
+    @include section-spacing(padding-right);
   }
 }
 

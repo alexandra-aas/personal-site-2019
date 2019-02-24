@@ -3,7 +3,10 @@ $featured-event-figure-width: 300px;
 
 .featured-event {
   @include event-border;
-  padding-right: $featured-event-figure-width;
+
+  @include mq($bp--tablet) {
+    padding-right: $featured-event-figure-width;
+  }
 }
 
 .featured-event__for {
@@ -12,7 +15,10 @@ $featured-event-figure-width: 300px;
 
 .featured-event__content {
   text-align: center;
-  width: $featured-event-content-width;
+
+  @include mq($bp--tablet) {
+    width: $featured-event-content-width;
+  }
 }
 
 .featured-event__next {
@@ -41,7 +47,11 @@ $featured-event-figure-width: 300px;
 }
 
 .featured-event__title {
-  @include margin($spacing--base null $spacing--xl);
+  @include margin($spacing--base null $spacing--md);
+
+  @include mq($bp--tablet) {
+    margin-bottom: $spacing--xl;
+  }
 }
 
 .featured-event__location {
@@ -56,14 +66,27 @@ $featured-event-figure-width: 300px;
 }
 
 .featured-event__figure {
-  @include border-right-radius($border-radius--lg);
   @include event-figure;
-  @include position(absolute, 0 0 0 null)
-  width: $featured-event-figure-width;
+
+  @include mq(0, $bp--tablet) {
+    @include border-bottom-radius($border-radius--lg);
+    @include size(100%, 0);
+    padding-bottom: 60%;
+  }
+
+  @include mq($bp--tablet) {
+    @include border-right-radius($border-radius--lg);
+    @include position(absolute, 0 0 0 null)
+    width: $featured-event-figure-width;
+  }
 }
 
 .featured-event__image {
   @include event-image(featured-event);
   @include size(100%);
-  background-size: contain;
+  background-size: cover;
+
+  @include mq($bp--tablet) {
+    background-size: contain;
+  }
 }

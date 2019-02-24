@@ -11,10 +11,13 @@
       .featured-event__day
         = event.day
       %h3.featured-event__title= event.title
-      %p.featured-event__location
-        - if event.type === "Bike Ride"
-          %span Starts at
-        = event.location
+      - if event.location
+        %p.featured-event__location
+          - if event.type === "Bike Ride"
+            %span Starts at
+            = event.location
+          - else
+            Location TBD
       .featured-event__type
         = partial 'partials/components/tag', locals: { text: event.type, location: 'center' }
   %figure.featured-event__figure

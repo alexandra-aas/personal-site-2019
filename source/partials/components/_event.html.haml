@@ -7,13 +7,13 @@
       = Date.new(event.year, event.month, event.day).strftime('%b')
       = event.day
     %h3.event__title= event.title
-    %p.event__location
-      - if event.location
+    - if event.location
+      %p.event__location
         - if event.type === "Bike Ride"
           %span Starts at
-        = event.location
-      - else
-        Location TBD
+          = event.location
+        - else
+          Location TBD
   %figure.event__figure
     .event__image{ style: "background-image: url('/assets/images/events/#{event.image}')"}
   .event__type

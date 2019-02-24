@@ -1,6 +1,6 @@
 .about__content {
   @include container;
-  @include section-indented(true);
+  @include section-indented;
 }
 
 .about__title {
