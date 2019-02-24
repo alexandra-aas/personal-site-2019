@@ -24,7 +24,7 @@
 
 @mixin h6 {
   @include margin(0 null);
-  font-family: $font--condensed;
+  font-family: $font--headings;
   font-size: $font-size--h6;
   font-weight: 600;
   letter-spacing: 1.5px;

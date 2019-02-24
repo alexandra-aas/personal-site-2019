@@ -4,7 +4,7 @@
   background-color: $color--dark-tan;
   display: flex;
   font-size: $font-size--sm;
-  font-family: $font--condensed;
+  font-family: $font--headings;
   justify-content: space-between;
   overflow: hidden;
   z-index: $z-index--nav;
@@ -22,7 +22,6 @@
 }
 
 .nav__link {
-  @include h6;
   color: $color--hunter;
   display: block;
   line-height: $nav-height;
