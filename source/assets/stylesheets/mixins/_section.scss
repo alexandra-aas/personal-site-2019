@@ -1,7 +1,15 @@
-@mixin section-title {
-  color: $color--hunter;
-  text-align: center;
-  margin-bottom: $spacing--lg;
+@mixin section-indented($horizontal: false, $vertical: false) {
+  @include mq($bp--desktop-xl) {
+    @if $horizontal {
+      @include section-spacing(padding-left);
+      @include section-spacing(padding-right);
+    }
+
+    @if $vertical {
+      @include section-spacing(padding-top);
+      @include section-spacing(padding-bottom);
+    }
+  }
 }
 
 @mixin section-spacing($property, $multiplier: 1) {
@@ -16,7 +24,13 @@
   }
 }
 
-@mixin reversed-section {
+@mixin section-title {
+  color: $color--hunter;
+  text-align: center;
+  margin-bottom: $spacing--lg;
+}
+
+@mixin section-reversed {
   @include container;
   @include section-spacing(padding);
   background-color: $color--hunter ;
@@ -24,4 +38,10 @@
   color: $color--tan;
   overflow: hidden;
   position: relative;
+
+  @include mq(max, $bp--tablet) {
+    @include margin(null (-$outer-padding));
+    border-radius: 0;
+    width: 100vw;
+  }
 }

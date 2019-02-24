@@ -50,7 +50,7 @@ $featured-event-figure-width: 300px;
 
 .featured-event__type {
   @include position(absolute, null null 0 50%);
-  outline: $border-cover;
+  box-shadow: $border-cover;
   transform: translate(-50%, 50%);
   z-index: 1;
 }

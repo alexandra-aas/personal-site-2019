@@ -2,7 +2,7 @@
   @include container;
   @include lines($right: true, $multiplier: 2);
   @include margin($border-width--cover null);
-  @include section-spacing(padding);
+  @include section-indented(true, true);
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -54,6 +54,6 @@
 }
 
 .topper__featured-event {
-  outline: $border-cover;
+  box-shadow: $border-cover;
   position: relative;
 }

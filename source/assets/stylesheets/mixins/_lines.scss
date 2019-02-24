@@ -11,11 +11,21 @@
     z-index: -1;
 
     @if $right {
-      @include section-spacing(right, $multiplier);
+      @include section-spacing(right, 1);
     }
 
     @if $left {
-      @include section-spacing(left, $multiplier);
+      @include section-spacing(left, 1);
+    }
+
+    @include mq($bp--desktop-xl) {
+      @if $right {
+        @include section-spacing(right, $multiplier);
+      }
+
+      @if $left {
+        @include section-spacing(left, $multiplier);
+      }
     }
   }
 }
