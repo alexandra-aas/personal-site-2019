@@ -61,7 +61,7 @@ $event-margin--lg: $spacing--lg;
   @include event-date;
   @include position(absolute, null null 100%);
   background-color: $color--tan;
-  box-shadow: $border-cover;
+  outline: $border-width--cover solid $color--tan;
   transform: translateY(50%);
   z-index: 1;
 }

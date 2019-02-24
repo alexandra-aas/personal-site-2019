@@ -31,6 +31,7 @@
 }
 
 @mixin event-date {
+  @include fluid-type($bp--tablet, $bp--desktop, $font-size--sm, $font-size--base);
   color: $color--hunter;
   font-family: $font--primary;
 }

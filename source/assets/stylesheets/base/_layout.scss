@@ -1,5 +1,5 @@
 body {
-  @include padding($nav-height $outer-padding null);
+  @include padding(null $outer-padding null);
   background-color: $color--tan;
   color: $color--gray;
   font-family: $--secondary;
@@ -7,6 +7,10 @@ body {
   line-height: $lh--base;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+
+  @include mq($bp--desktop) {
+    padding-top: $nav-height;
+  }
 }
 
 *, *:before, *:after {

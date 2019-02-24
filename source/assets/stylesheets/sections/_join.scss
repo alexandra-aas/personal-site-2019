@@ -12,7 +12,7 @@
 }
 
 .join__title {
-  margin-bottom: $spacing--sm;
+  @include section-title(true);
 }
 
 .join__text {

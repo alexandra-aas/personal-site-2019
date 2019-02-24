@@ -5,9 +5,10 @@
 
   &.tag--left {
     border-top-right-radius: $border-radius--lg;
+    border-bottom-left-radius: $border-radius--lg;
   }
 
   &.tag--center {
-    border-radius: $border-radius--sm;
+    border-radius: $border-radius--lg;
   }
 }
