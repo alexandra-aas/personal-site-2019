@@ -44,5 +44,6 @@
 
 .mission__logo {
   @include figure-reset;
-  @include position(absolute, null $section-spacing--base (-$spacing--lg) null);
+  @include position(absolute, null null (-$spacing--lg) null);
+  @include section-spacing(right);
 }

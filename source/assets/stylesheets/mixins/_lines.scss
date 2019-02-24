@@ -1,13 +1,21 @@
-@mixin lines($right: null, $left: null) {
-  overflow: hidden;
+@mixin lines($right: false, $left: false, $multiplier: 1) {
+  overflow-y: hidden;
   position: relative;
   z-index: 0;
 
   &::after {
-    @include position(absolute, 0 $right 0 $left);
+    @include position(absolute, 0 null);
     background: image-url('lines.svg') repeat-y;
     content: '';
     width: 84px;
     z-index: -1;
+
+    @if $right {
+      @include section-spacing(right, $multiplier);
+    }
+
+    @if $left {
+      @include section-spacing(left, $multiplier);
+    }
   }
 }

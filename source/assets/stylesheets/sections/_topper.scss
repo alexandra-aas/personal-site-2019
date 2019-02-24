@@ -1,6 +1,6 @@
 .topper {
   @include container;
-  @include lines($right: $section-spacing--base * 2);
+  @include lines($right: true, $multiplier: 2);
   @include margin($border-width--cover null);
   @include section-spacing(padding);
   align-items: center;

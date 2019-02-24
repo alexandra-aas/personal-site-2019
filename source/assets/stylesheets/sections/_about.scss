@@ -1,11 +1,14 @@
 .about__content {
   @include container;
-  @include section-spacing(padding-left);
-  @include section-spacing(padding-right);
+  
+  @include mq($bp--desktop) {
+    @include section-spacing(padding-left);
+    @include section-spacing(padding-right);
+  }
 }
 
 .about__sections {
-  @include lines($left: $section-spacing--base);
+  @include lines($left: true);
   @include section-spacing(padding-bottom);
   position: relative;
   z-index: 0;
@@ -14,16 +17,29 @@
 .about__section {
   align-items: flex-start;
   display: flex;
+  flex-direction: column;
 
   &:not(:last-of-type) {
-    margin-bottom: $spacing--lg;
+    margin-bottom: $spacing--md;
+  }
+
+  @include mq($bp--desktop) {
+    flex-direction: row;
+
+    &:not(:last-of-type) {
+      margin-bottom: $spacing--lg;
+    }
   }
 }
 
 .about__image {
   outline: $border-cover;
   margin-right: $spacing--lg;
-  max-width: 700px;
+  width: 100%;
+
+  @include mq($bp--desktop) {
+    width: 50%;
+  }
 }
 
 .about__title {

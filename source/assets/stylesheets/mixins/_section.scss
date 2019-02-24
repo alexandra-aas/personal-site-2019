@@ -4,15 +4,15 @@
   margin-bottom: $spacing--lg;
 }
 
-@mixin section-spacing($property) {
-  #{$property}: $section-spacing--sm;
+@mixin section-spacing($property, $multiplier: 1) {
+  #{$property}: $section-spacing--sm * $multiplier;
 
   @include mq($bp--tablet) {
-    #{$property}: $section-spacing--base;
+    #{$property}: $section-spacing--base * $multiplier;
   }
 
   @include mq($bp--desktop) {
-    #{$property}: $section-spacing--lg;
+    #{$property}: $section-spacing--lg * $multiplier;
   }
 }
 

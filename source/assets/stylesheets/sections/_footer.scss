@@ -4,7 +4,7 @@
   text-align: center;
 
   @include mq($bp--desktop) {
-    @include lines($left: $section-spacing--base * 2);
+    @include lines($left: true, $multiplier: 2);
     @include padding($spacing--lg null);
   }
 }
