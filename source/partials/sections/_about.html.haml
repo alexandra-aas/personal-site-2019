@@ -3,8 +3,9 @@
     %h2.about__title About Us
     .about__sections
       %article.about__section
-        = image_tag 'about/1894.png', class: 'about__image'
-        %div
+        %figure.about__figure
+          = image_tag 'about/1894.png', class: 'about__image'
+        %div.about__section-content
           %h3 Founded
           .about__number
             1894
@@ -15,8 +16,9 @@
             lacinia bibendum nulla sed consectetur. Curabitur blandit tempus porttitor porttitor curabitur
             blandit.
       %article.about__section
-        = image_tag 'about/2018.png', class: 'about__image'
-        %div
+        %figure.about__figure
+          = image_tag 'about/2018.png', class: 'about__image'
+        %div.about__section-content
           %h3 Restarted
           .about__number
             1894
