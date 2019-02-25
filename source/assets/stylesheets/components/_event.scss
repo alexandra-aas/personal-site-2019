@@ -18,8 +18,8 @@ $event-margin--lg: $spacing--lg;
   @include mq($bp--tablet, $bp--desktop) {
     width: 48%;
 
-    &:not(:nth-child(2n)) {
-      margin-right: 2%;
+    &:nth-child(odd) {
+      margin-right: 4%;
     }
 
     &:nth-of-type(n+3) {
@@ -28,10 +28,10 @@ $event-margin--lg: $spacing--lg;
   }
 
   @include mq($bp--desktop, $bp--desktop-xl) {
-    width: 31.3%;
+    width: calc((100% - (2% * 3)) / 3);
 
     &:not(:nth-child(3n)) {
-      margin-right: 2%;
+      margin-right: calc((2% * 3) / 2);
     }
 
     &:nth-of-type(n+4) {
@@ -43,7 +43,7 @@ $event-margin--lg: $spacing--lg;
     width: 23%;
 
     &:not(:nth-child(4n)) {
-      margin-right: 2%;
+      margin-right: calc((2% * 4) / 3);
     }
 
     &:nth-of-type(n+5) {
