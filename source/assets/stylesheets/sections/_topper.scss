@@ -24,7 +24,7 @@
 }
 
 .topper__content {
-  flex: 1 0 auto;
+  flex: 0 0 auto;
 }
 
 .topper__subhead {
@@ -72,7 +72,7 @@
 }
 
 .topper__featured-event {
-  flex: 1 0 auto;
+  flex: 0 0 auto;
   width: 100%;
   max-width: $featured-event-content-width + $featured-event-figure-width;
 
