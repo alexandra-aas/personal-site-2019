@@ -14,6 +14,7 @@
     @include margin(null (-$outer-padding));
     @include padding(null $outer-padding);
     overflow-x: scroll;
+    -webkit-overflow-scrolling:touch;
     width: 100vw;
   }
 

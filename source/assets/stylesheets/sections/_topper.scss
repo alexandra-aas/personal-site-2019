@@ -1,6 +1,7 @@
 .topper {
   @include container;
-  @include margin($cover-lines-size null);
+  @include section-spacing(margin-top);
+  @include section-spacing(margin-bottom);
   @include section-indented;
   align-items: center;
   display: flex;
@@ -8,18 +9,19 @@
   justify-content: space-around;
   text-align: center;
 
-  @include mq(max, $bp--desktop) {
-    @include section-spacing(margin-top);
-    @include section-spacing(margin-bottom);
-  }
-
   @include mq($bp--desktop) {
     @include lines($right: true, $multiplier: 2);
-    @include section-spacing(padding-top);
-    @include section-spacing(padding-bottom);
+    @include margin($cover-lines-size null);
+    @include padding($spacing--lg null);
     flex-direction: row;
     text-align: left;
   }
+
+  @include mq($bp--desktop-xl) {
+    @include section-spacing(padding-top);
+    @include section-spacing(padding-bottom);
+  }
+
 }
 
 .topper__subhead {
@@ -68,9 +70,12 @@
 
 .topper__featured-event {
   flex: 1;
-  margin-top: $spacing--md;
   width: 100%;
   max-width: $featured-event-content-width + $featured-event-figure-width;
+
+  @include mq(max, $bp--desktop) {
+    margin-top: $spacing--md;
+  }
 
   @include mq($bp--tablet-xl) {
     width: $featured-event-content-width + $featured-event-figure-width;
