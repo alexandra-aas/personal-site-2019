@@ -5,6 +5,7 @@ body {
   font-family: $--secondary;
   font-size: $font-size--base;
   line-height: $lh--base;
+  -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 

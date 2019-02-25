@@ -35,7 +35,11 @@
   }
 
   @include mq($bp--tablet) {
+    @include margin(null $spacing--xs);
     background-color: $color--coral;
+    box-shadow:
+      $spacing--xs 0 0 $color--coral,
+      -$spacing--xs 0 0 $color--coral;
     color: $color--hunter;
     transition:
       background-color 300ms ease-in-out,

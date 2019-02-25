@@ -45,16 +45,16 @@
   @include mq($bp--tablet-xl) {
     box-shadow: $box-shadow--cover-lines;
     margin-right: $spacing--md;
-    width: 30%;
+    min-width: 30%;
   }
 
   @include mq($bp--desktop) {
-    width: 40%;
+    min-width: 40%;
   }
 
   @include mq($bp--desktop-xl) {
     margin-right: $spacing--lg;
-    width: 50%;
+    min-width: 50%;
   }
 }
 
