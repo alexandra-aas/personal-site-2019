@@ -1,6 +1,3 @@
-$featured-event-content-width: 350px;
-$featured-event-figure-width: 300px;
-
 .featured-event {
   @include event-border;
 
@@ -9,7 +6,7 @@ $featured-event-figure-width: 300px;
   }
 
   @include mq($bp--tablet-xl) {
-    padding-right: $featured-event-figure-width;
+    display: flex;
   }
 }
 
@@ -39,10 +36,11 @@ $featured-event-figure-width: 300px;
   background-color: $color--tan;
   display: flex;
   flex-direction: column;
-  padding: $spacing--md $spacing--md $spacing--lg;
+  padding: $spacing--md;
 
   @include mq($bp--tablet-xl) {
     position: relative;
+    padding-bottom: $spacing--lg;
   }
 }
 
@@ -89,9 +87,9 @@ $featured-event-figure-width: 300px;
   }
 
   @include mq($bp--tablet-xl) {
+    @include position(absolute, 0 0 0 null);
     @include border-right-radius($border-radius--lg);
-    @include position(absolute, 0 0 0 null)
-    width: $featured-event-figure-width;
+    width: calc(100% - #{$featured-event-content-width});
   }
 }
 

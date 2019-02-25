@@ -1,5 +1,5 @@
 @mixin h1 {
-  @include fluid-type($bp--tablet, $bp--desktop, $font-size--h1-min, $font-size--h1-max);
+  @include fluid-type($bp--tablet, $bp--desktop-xl, $font-size--h1-min, $font-size--h1-max);
   @include margin(0 null);
   color: $color--hunter;
   font-family: $font--primary;

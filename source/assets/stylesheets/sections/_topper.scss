@@ -5,7 +5,7 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   text-align: center;
 
   @include mq(max, $bp--desktop) {
@@ -67,7 +67,14 @@
 }
 
 .topper__featured-event {
+  flex: 1;
   margin-top: $spacing--md;
+  width: 100%;
+  max-width: $featured-event-content-width + $featured-event-figure-width;
+
+  @include mq($bp--tablet-xl) {
+    width: $featured-event-content-width + $featured-event-figure-width;
+  }
 
   @include mq($bp--desktop) {
     box-shadow: $box-shadow--cover-lines;
