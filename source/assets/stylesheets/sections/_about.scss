@@ -60,5 +60,9 @@
 
 .about__number {
   @include fancy-number;
-  margin-bottom: $spacing--md
+  margin-bottom: $spacing--base;
+
+  @include mq($bp--tablet-xl) {
+    margin-bottom: $spacing--md;
+  }
 }

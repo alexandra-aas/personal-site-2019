@@ -12,6 +12,8 @@
         - if event.type === "Bike Ride"
           %span Starts at
           = event.location
+        - else
+          = event.location
       - else
         Location TBD
   %figure.event__figure

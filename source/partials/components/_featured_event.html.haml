@@ -12,9 +12,11 @@
         = event.day
       %h3.featured-event__title= event.title
       %p.featured-event__location
-        - if event.location        
+        - if event.location
           - if event.type === "Bike Ride"
             %span Starts at
+            = event.location
+          - else
             = event.location
         - else
           Location TBD

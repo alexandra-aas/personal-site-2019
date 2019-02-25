@@ -3,7 +3,7 @@
   background-image: image-url('logo.svg');
   background-repeat: no-repeat;
   background-position: 90% bottom;
-  background-size: auto 100px;
+  background-size: auto 90px;
 
   @include mq($bp--tablet) {
     background-size: auto 200px;
