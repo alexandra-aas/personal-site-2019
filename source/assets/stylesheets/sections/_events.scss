@@ -8,8 +8,18 @@
 }
 
 .events__content {
-  @include container;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+
+  @include mq(max, $bp--tablet) {
+    @include margin(null (-$outer-padding));
+    @include padding(null $outer-padding);
+    overflow-x: scroll;
+    width: 100vw;
+  }
+
+  @include mq($bp--tablet) {
+    @include container;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }

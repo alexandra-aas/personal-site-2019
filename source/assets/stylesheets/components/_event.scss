@@ -8,18 +8,11 @@ $event-margin--lg: $spacing--lg;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  width: 100%;
 
   @include mq(max, $bp--tablet) {
-    width: 100%;
-
-    &:nth-of-type(n+2) {
-      margin-top: $event-margin--sm;
-    }
-
-    &.event--for {
-      margin-top: $stamp-size--half + $event-margin--sm;
-    }
+    margin-top: $stamp-size--half;
+    margin-right: $spacing--base;
+    min-width: 80vw;
   }
 
   @include mq($bp--tablet, $bp--desktop) {
@@ -45,12 +38,16 @@ $event-margin--lg: $spacing--lg;
       margin-top: $stamp-size--half + $event-margin--lg;
     }
   }
-
-
 }
 
 .event__for {
   @include event-for(event, null $spacing--base 100% null, 0, 50%)
+
+  &.event-for--next {
+    @include mq($bp--tablet) {
+      display: none;
+    }
+  }
 }
 
 .event__content {

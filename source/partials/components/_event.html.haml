@@ -2,6 +2,9 @@
   - if event.for
     .event__for
       = partial 'partials/components/stamp', locals: { text: event.for}
+  - elsif index == 0
+    .event__for.event-for--next
+      = partial 'partials/components/stamp', locals: { text: 'Next Event' }
   .event__content
     .event__date
       = Date.new(event.year, event.month, event.day).strftime('%b')
