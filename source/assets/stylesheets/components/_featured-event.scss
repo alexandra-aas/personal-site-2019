@@ -53,7 +53,8 @@
 }
 
 .featured-event__title {
-  @include margin($spacing--base null $spacing--md);
+  margin: $spacing--base auto $spacing--md;
+  max-width: $featured-event-content-width;
 
   @include mq($bp--tablet-xl) {
     margin-bottom: $spacing--xl;
