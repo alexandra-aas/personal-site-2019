@@ -15,12 +15,12 @@ $event-margin--lg: $spacing--lg;
     min-width: 80vw;
   }
 
+  @include mq($bp--tablet) {
+    @include margin(null 1%);
+  }
+
   @include mq($bp--tablet, $bp--desktop) {
     width: 48%;
-
-    &:nth-child(odd) {
-      margin-right: 4%;
-    }
 
     &:nth-of-type(n+3) {
       margin-top: $stamp-size--half + $event-margin--lg;
@@ -28,11 +28,7 @@ $event-margin--lg: $spacing--lg;
   }
 
   @include mq($bp--desktop, $bp--desktop-xl) {
-    width: calc((100% - (2% * 3)) / 3);
-
-    &:not(:nth-child(3n)) {
-      margin-right: calc((2% * 3) / 2);
-    }
+    width: 31.3%;
 
     &:nth-of-type(n+4) {
       margin-top: $stamp-size--half + $event-margin--lg;
@@ -41,10 +37,6 @@ $event-margin--lg: $spacing--lg;
 
   @include mq($bp--desktop-xl) {
     width: 23%;
-
-    &:not(:nth-child(4n)) {
-      margin-right: calc((2% * 4) / 3);
-    }
 
     &:nth-of-type(n+5) {
       margin-top: $stamp-size--half + $event-margin--lg;
