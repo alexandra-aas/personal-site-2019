@@ -1,6 +1,6 @@
 body {
   @include padding(null $outer-padding null);
-  @include fluid-type($bp--tablet, $bp--desktop-xl, 18px, $font-size--base);
+  @include fluid-type($bp--tablet, $bp--desktop-xl, $font-size--sm, $font-size--base);
   background-color: $color--tan;
   color: $color--gray;
   font-family: $--secondary;

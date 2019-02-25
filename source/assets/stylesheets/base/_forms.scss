@@ -22,7 +22,7 @@ input {
   @include padding(null $spacing--base);
   background-color: $color--white;
   border-radius: $border-radius--lg;
-  font-size: $font-size--sm;
+  font-size: $font-size--xs;
   font-weight: 500;
   height: $input-height;
   outline: none;

@@ -3,8 +3,9 @@ $--secondary: 'Work Sans', sans-serif;;
 $font--primary: 'Adieu';
 
 // Font Sizes
-$font-size--xs: 12px;
-$font-size--sm: 16px;
+$font-size--xxs: 12px;
+$font-size--xs: 16px;
+$font-size--sm: 18px;
 $font-size--base: 20px;
 $font-size--md: 24px;
 $font-size--lg: 30px;
@@ -22,13 +23,13 @@ $font-size--h2-min: $font-size--lg;
 $font-size--h3-max: $font-size--md;
 $font-size--h3-min: $font-size--base;
 //--
-$font-size--h4: $font-size--xs;
+$font-size--h4: $font-size--xxs;
 //--
 $font-size--body-lg-max: $font-size--xl;
-$font-size--body-lg-min: 18px;
+$font-size--body-lg-min: $font-size--sm;
 //--
 $font-size--body-md-max: $font-size--md;
-$font-size--body-md-min: 18px;
+$font-size--body-md-min: $font-size--sm;
 
 // Line Heights
 $lh--sm: 1.25;

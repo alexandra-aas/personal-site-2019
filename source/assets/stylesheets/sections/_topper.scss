@@ -29,7 +29,11 @@
 
 .topper__subhead {
   @include body--md;
-  margin-top: $spacing--md;
+  margin-top: $spacing--base;
+
+  @include mq($bp--tablet-xl) {
+    margin-top: $spacing--md;
+  }
 }
 
 .topper__cta {

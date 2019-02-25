@@ -73,7 +73,7 @@
 
 .about__number {
   @include fancy-number;
-  margin-bottom: $spacing--sm;
+  margin-bottom: $spacing--base;
 
   @include mq($bp--tablet-xl) {
     margin-bottom: $spacing--md;

@@ -30,14 +30,14 @@
 }
 
 @mixin event-date {
-  @include fluid-type($bp--tablet, $bp--desktop, $font-size--sm, $font-size--base);
+  @include fluid-type($bp--tablet, $bp--desktop, $font-size--xs, $font-size--base);
   color: $color--hunter;
   font-family: $font--primary;
 }
 
 @mixin event-location {
   color: $color--gray;
-  font-size: $font-size--sm;
+  font-size: $font-size--xs;
 }
 
 @mixin event-figure {
