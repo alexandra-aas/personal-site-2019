@@ -1,14 +1,15 @@
 %footer.footer
-  %ul.footer__list
-    %li.footer__item
-      = link_to 'Facebook',
-        'https://www.facebook.com/dedhamcycleclub/',
+  .footer__inner
+    %ul.footer__list
+      %li.footer__item
+        = link_to 'Facebook',
+          'https://www.facebook.com/dedhamcycleclub/',
+          class: 'footer__link',
+          target: '_blank'
+      %li.footer__item
+        = link_to 'Email',
+        'mailto:dedhamcycleclub@gmail.com',
         class: 'footer__link',
         target: '_blank'
-    %li.footer__item
-      = link_to 'Email',
-      'mailto:dedhamcycleclub@gmail.com',
-      class: 'footer__link',
-      target: '_blank'
-  %small
-    Copyright © 2019
+    %small
+      Copyright © 2019
