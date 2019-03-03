@@ -1,14 +1,13 @@
-= link_to event.link, class: "event #{ event.for ? 'event--for' : '' }", target: '_blank' do
-  - if event.for
+= link_to event.link ? event.link : 'https://www.facebook.com/pg/dedhamcycleclub/events/', class: 'event', target: '_blank' do
+  - if event.age
     .event__for
-      = partial 'partials/components/stamp', locals: { text: event.for}
+      = partial 'partials/components/stamp', locals: { text: event.age}
   - elsif index == 0
     .event__for.event-for--next
       = partial 'partials/components/stamp', locals: { text: 'Next Event' }
   .event__content
     .event__date
-      = Date.new(event.year, event.month, event.day).strftime('%b')
-      = event.day
+      = event.date.strftime('%b %d')
     %h3.event__title= event.title
     %p.event__location
       - if event.location
@@ -20,5 +19,5 @@
       - else
         Location TBD
   %figure.event__figure
-    .event__image{ style: "background-image: url('/assets/images/events/#{event.image}')"}
+    .event__image{ style: "background-image: url('#{event.image.url}')"}
   .event__type= event.type

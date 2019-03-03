@@ -1,5 +1,5 @@
 %section#events.events
   %h2.events__title 2019 Events
   .events__content
-    - data.events.each_with_index do |event, index|
+    - data.space.events.each_with_index do |(id, event), index|
       = partial 'partials/components/event', locals: { event: event, index: index }
