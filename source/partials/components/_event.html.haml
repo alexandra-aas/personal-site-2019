@@ -1,4 +1,4 @@
-= link_to event.link ? event.link : 'https://www.facebook.com/pg/dedhamcycleclub/events/', class: 'event', target: '_blank' do
+= link_to event.link ? event.link : default_event_link, class: 'event', target: '_blank' do
   - if event.age
     .event__for
       = partial 'partials/components/stamp', locals: { text: event.age}

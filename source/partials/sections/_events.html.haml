@@ -1,5 +1,6 @@
 %section#events.events
   %h2.events__title 2019 Events
   .events__content
-    - data.space.events.each_with_index do |(id, event), index|
+    - sorted_events = data.space.events.sort_by{ |id, event| event[:date] }
+    - sorted_events.each_with_index do |(id, event), index|
       = partial 'partials/components/event', locals: { event: event, index: index }

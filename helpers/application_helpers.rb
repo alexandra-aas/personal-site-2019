@@ -7,4 +7,8 @@ module ApplicationHelpers
     return File.read(file_path) if File.exists?(file_path)
     "(SVG not found)"
   end
+
+  def default_event_link
+    'https://www.facebook.com/pg/dedhamcycleclub/events/'
+  end
 end
