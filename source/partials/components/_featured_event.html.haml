@@ -1,4 +1,4 @@
-= link_to event.link, class: 'featured-event', target: '_blank' do
+= link_to event.link ? event.link : default_event_link, class: 'featured-event', target: '_blank' do
   - if event.for
     .featured-event__for
       = partial 'partials/components/stamp', locals: { text: event.for}
@@ -7,19 +7,12 @@
       %h4 Next Event
     .featured-event__body
       .featured-event__month
-        = Date.new(event.year, event.month, event.day).strftime('%B')
+        = event.date.strftime('%B')
       .featured-event__day
-        = event.day
+        = event.date.strftime('%-d')
       %h3.featured-event__title= event.title
       %p.featured-event__location
-        - if event.location
-          - if event.type === "Bike Ride"
-            %span Starts at
-            = event.location
-          - else
-            = event.location
-        - else
-          Location TBD
+        = event_location(event)
       .featured-event__type= event.type
   %figure.featured-event__figure
-    .featured-event__image{ style: "background-image: url('/assets/images/events/#{event.image}')"}
+    .featured-event__image{ style: "background-image: url('#{event.image.url}')"}

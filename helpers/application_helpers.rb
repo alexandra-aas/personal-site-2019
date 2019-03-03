@@ -11,4 +11,17 @@ module ApplicationHelpers
   def default_event_link
     'https://www.facebook.com/pg/dedhamcycleclub/events/'
   end
+
+  def event_location(event)
+    if event.location
+      if event.type === 'Bike Ride'
+        content_tag(:span, 'Starts at')
+        event.location
+      else
+        event.location
+      end
+    else
+      Location TBD
+    end
+  end
 end

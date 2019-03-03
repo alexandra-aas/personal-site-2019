@@ -34,8 +34,8 @@
       @include margin($spacing--lg null $spacing--md);
     }
 
-    @include mq($bp--tablet) {
-      margin-bottom: $spacing--lg;
+    @include mq($bp--desktop) {
+      @include margin($spacing--xl null $spacing--lg);
     }
   }
 }

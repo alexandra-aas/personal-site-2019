@@ -7,10 +7,10 @@ $event-margin--lg: $spacing--lg;
   @include event-border;
   display: flex;
   flex-direction: column;
+  margin-top: $stamp-size--half;
   justify-content: flex-end;
 
   @include mq(max, $bp--tablet) {
-    margin-top: $stamp-size--half;
     margin-right: $spacing--base;
     min-width: 80vw;
   }
@@ -46,12 +46,6 @@ $event-margin--lg: $spacing--lg;
 
 .event__for {
   @include event-for(event, null $spacing--base 100% null, 0, 50%)
-
-  &.event-for--next {
-    @include mq($bp--tablet) {
-      display: none;
-    }
-  }
 }
 
 .event__content {

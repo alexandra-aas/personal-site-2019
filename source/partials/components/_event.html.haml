@@ -3,21 +3,14 @@
     .event__for
       = partial 'partials/components/stamp', locals: { text: event.age}
   - elsif index == 0
-    .event__for.event-for--next
+    .event__for
       = partial 'partials/components/stamp', locals: { text: 'Next Event' }
   .event__content
     .event__date
-      = event.date.strftime('%b %d')
+      = event.date.strftime('%b %-d')
     %h3.event__title= event.title
     %p.event__location
-      - if event.location
-        - if event.type === "Bike Ride"
-          %span Starts at
-          = event.location
-        - else
-          = event.location
-      - else
-        Location TBD
+      = event_location(event)
   %figure.event__figure
     .event__image{ style: "background-image: url('#{event.image.url}')"}
   .event__type= event.type
