@@ -27,12 +27,9 @@
   }
 
   @else {
+    @include margin($spacing--lg null $spacing--md);
     color: $color--hunter;
     text-align: center;
-
-    @include mq(max, $bp--tablet) {
-      @include margin($spacing--lg null $spacing--md);
-    }
 
     @include mq($bp--desktop) {
       @include margin($spacing--xl null $spacing--lg);
