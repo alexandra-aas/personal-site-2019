@@ -21,7 +21,7 @@ module ApplicationHelpers
         event.location
       end
     else
-      Location TBD
+      'Location TBD'
     end
   end
 end

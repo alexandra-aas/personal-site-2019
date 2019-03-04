@@ -6,10 +6,11 @@
     .featured-event__next
       %h4 Next Event
     .featured-event__body
-      .featured-event__month
-        = event.date.strftime('%B')
-      .featured-event__day
-        = event.date.strftime('%-d')
+      - if event.date
+        .featured-event__month
+          = event.date.strftime('%B')
+        .featured-event__day
+          = event.date.strftime('%-d')
       %h3.featured-event__title= event.title
       %p.featured-event__location
         = event_location(event)

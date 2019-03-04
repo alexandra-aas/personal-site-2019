@@ -1,6 +1,16 @@
 %section#events.events
   %h2.events__title 2019 Events
   .events__content
-    - sorted_events = data.space.events.sort_by{ |id, event| event[:date] }
-    - sorted_events.each_with_index do |(id, event), index|
-      = partial 'partials/components/event', locals: { event: event, index: index }
+    - unscheduled_events = data.space.events.select{ |id, event| event[:date] == nil }
+    - scheduled_events = data.space.events.select{ |id, event| event[:date] != nil }.sort_by{ |id, event| event[:date] }
+    - future_events = scheduled_events.select{ |id, event| event[:date] >= Date.today }
+    - past_events = scheduled_events.select{ |id, event| event[:date] < Date.today }
+
+    - past_events.each_with_index do |(id, event), index|
+      = partial 'partials/components/event', locals: { event: event, index: index, active: false }
+
+    - future_events.each_with_index do |(id, event), index|
+      = partial 'partials/components/event', locals: { event: event, index: index, active: true }
+
+    - unscheduled_events.each_with_index do |(id, event), index|
+      = partial 'partials/components/event', locals: { event: event, index: index, active: true }

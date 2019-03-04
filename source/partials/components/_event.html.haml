@@ -1,13 +1,16 @@
-= link_to event.link ? event.link : default_event_link, class: 'event', target: '_blank' do
+= link_to event.link ? event.link : default_event_link, class: "event #{active ? 'active' : 'inactive'}", target: '_blank' do
   - if event.age
     .event__for
       = partial 'partials/components/stamp', locals: { text: event.age}
-  - elsif index == 0
+  - elsif index == 0 && active
     .event__for
       = partial 'partials/components/stamp', locals: { text: 'Next Event' }
   .event__content
     .event__date
-      = event.date.strftime('%b %-d')
+      - if event.date
+        = event.date.strftime('%b %-d')
+      - else
+        TBD
     %h3.event__title= event.title
     %p.event__location
       = event_location(event)

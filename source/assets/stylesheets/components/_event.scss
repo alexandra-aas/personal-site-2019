@@ -10,9 +10,18 @@ $event-margin--lg: $spacing--lg;
   margin-top: $stamp-size--half;
   justify-content: flex-end;
 
+  &.inactive {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
   @include mq(max, $bp--tablet) {
     margin-right: $spacing--base;
     min-width: 80vw;
+
+    &.inactive {
+      display: none;
+    }
   }
 
   @include mq($bp--tablet) {
