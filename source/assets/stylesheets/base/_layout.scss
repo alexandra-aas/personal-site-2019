@@ -11,8 +11,12 @@ body {
   flex-direction: column;
   font-family: $font-family;
   line-height: $line-height--lg;
-  padding: $site-padding;
+  padding: $site-padding--sm;
   max-width: $bp--desktop-lg;
+
+  @include mq($bp--tablet) {
+    padding: $site-padding--lg;
+  }
 
   @include mq($bp--desktop-sm) {
     flex-direction: row;
@@ -21,11 +25,11 @@ body {
 
 main {
   @include mq(max, $bp--desktop-sm) {
-    margin-bottom: $site-padding;
+    margin-bottom: $site-padding--lg;
   }
 
   @include mq($bp--desktop-sm) {
-    margin-right: $site-padding;
+    margin-right: $site-padding--lg;
     width: 75%;
   }
 }
@@ -35,7 +39,7 @@ figure {
   margin: 0;
 
   @include mq($bp--desktop-sm) {
-    @include position(sticky, $site-padding null null);
+    @include position(sticky, $site-padding--lg null null);
     width: 25%;
   }
 

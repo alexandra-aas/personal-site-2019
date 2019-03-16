@@ -3,7 +3,7 @@ $font-family: 'Steinbeck';
 
 // Font Sizes
 $font-size--sm: 14px;
-$font-size--md: 18px;
+$font-size--md: 20px;
 $font-size--lg: 46px;
 
 // Line Heights
@@ -22,4 +22,5 @@ $bp--desktop-md: 1400px;
 $bp--desktop-lg: 1680px;
 
 // Sizes
-$site-padding: 2em;
+$site-padding--sm: 1em;
+$site-padding--lg: 2em;
