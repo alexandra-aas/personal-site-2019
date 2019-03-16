@@ -1,26 +1,50 @@
-body {
-  @include padding(null $outer-padding null);
-  @include fluid-type($bp--tablet, $bp--desktop-xl, $font-size--sm, $font-size--base);
-  background-color: $color--tan;
-  color: $color--gray;
-  font-family: $--secondary;
-  font-size: $font-size--base;
-  line-height: $lh--base;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-
-  @include mq($bp--desktop) {
-    padding-top: $nav-height;
-  }
-}
-
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
-.hidden {
-  @include position(absolute, auto null null -10000px);
-  @include size(1px);
-  overflow:hidden;
+body {
+  @include fluid-type($bp--mobile, $bp--desktop-md, $font-size--md, $font-size--lg);
+  align-items: flex-start;
+  background-color: $color--bg;
+  color: $color--text;
+  display: flex;
+  flex-direction: column;
+  font-family: $font-family;
+  line-height: $line-height--lg;
+  padding: $site-padding;
+  max-width: $bp--desktop-lg;
+
+  @include mq($bp--desktop-sm) {
+    flex-direction: row;
+  }
+}
+
+main {
+  @include mq(max, $bp--desktop-sm) {
+    margin-bottom: $site-padding;
+  }
+
+  @include mq($bp--desktop-sm) {
+    margin-right: $site-padding;
+    width: 75%;
+  }
+}
+
+figure {
+  background-color: $color--bg;
+  margin: 0;
+
+  @include mq($bp--desktop-sm) {
+    @include position(sticky, $site-padding null null);
+    width: 25%;
+  }
+
+  img {
+    mix-blend-mode: multiply;
+    width: 100%;
+
+    @include mq($bp--tablet) {
+      max-width: 40vw;
+    }
+  }
 }

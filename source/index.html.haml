@@ -1,11 +1,22 @@
----
-title: DCC
----
+%main
+  %p
+    Hi, I’m Ali Aas (pronounced ‘oz’ like the wizard). I’m a designer at
+    #{link_to 'Upstatement', 'https://www.upstatement.com/studio/', target: '_blank'},
+    a boutique studio in Boston, MA. At work, I help people who help people. In 2018, I re-imagined the face of
+    #{link_to 'venture capital', 'https://www.upstatement.com/work/emergence/', target: '_blank'},
+    introduced an emerging
+    #{link_to 'investigative newsroom', 'https://themarkup.org/', target: '_blank'},
+    and created a
+    #{link_to 'digital gallery', 'http://web.mit.edu/research/', target: '_blank'}
+    experience for MIT using CSS Grid. Before Upstatement, I did product design at
+    #{link_to 'thoughtbot', 'https://thoughtbot.com/blog/the-remix', target: '_blank'},
+    where I learned to care about the craftsmanship of code. Throughout my career, I’ve prided
+    myself on organization, a team-first mentality, and the neatest handwriting around. Outside of
+    work, you can find me walking my dachshund Eleanor, traveling around New England, visiting
+    National Parks, and riding my Brompton. Finally, I rarely leave the house without my hair in a bun.
 
-= partial 'partials/sections/nav'
-= partial 'partials/sections/topper'
-= partial 'partials/sections/mission'
-= partial 'partials/sections/events'
-= partial 'partials/sections/about'
-= partial 'partials/sections/join'
-= partial 'partials/sections/footer'
+  %p
+    = link_to 'aas.alexandra@gmail.com', 'mailto:aas.alexandra@gmail.com'
+%figure
+  = image_tag 'me.png'
+  %figcaption I took this picture in the bathroom.

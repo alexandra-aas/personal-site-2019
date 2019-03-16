@@ -1,37 +1,22 @@
-h1 {
-  @include h1;
-}
-
-h2 {
-  @include h2;
-}
-
-h3 {
-  @include h3;
-}
-
-h4 {
-  @include h4;
-}
-
 p {
-  @include margin(0 null $spacing--base);
-  line-height: $lh--lg;
+  margin: 0;
 
-  &:last-of-type {
-    margin-bottom: 0;
+  &:not(:last-of-type) {
+    margin-bottom: 1em;
   }
 }
 
 a {
+  border-bottom: 0.05em solid;
+  color: inherit;
   text-decoration: none;
+
+  &:hover {
+    cursor: crosshair;
+  }
 }
 
-small {
-  font-size: $font-size--xs;
-  font-weight: 500;
-}
-
-img {
-  display: block;
+figcaption {
+  font-size: $font-size--sm;
+  line-height: $line-height--sm;
 }

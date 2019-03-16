@@ -1,5 +1,0 @@
-@mixin container {
-  @include margin(null auto);
-  max-width: $container-width;
-  width: 100%;
-}
