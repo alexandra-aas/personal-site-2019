@@ -9,7 +9,7 @@ body {
   color: $color--text;
   display: flex;
   flex-direction: column;
-  font-family: $font-family;
+  font-family: $font-family--sans;
   line-height: $line-height--lg;
   padding: $site-padding--sm;
   max-width: $bp--desktop-lg;
@@ -34,9 +34,29 @@ main {
   }
 }
 
+.headshot {
+
+  margin: 0;
+  width: 100%;
+
+  @include mq($bp--tablet) {
+    max-width: 40vw;
+  }
+
+  @include mq($bp--desktop-sm) {
+    @include position(sticky, $site-padding--lg null null);
+    width: 25%;
+  }
+}
+
 figure {
   background-color: $color--bg;
   margin: 0;
+  width: 100%;
+
+  @include mq($bp--tablet) {
+    max-width: 40vw;
+  }
 
   @include mq($bp--desktop-sm) {
     @include position(sticky, $site-padding--lg null null);
@@ -44,11 +64,9 @@ figure {
   }
 
   img {
-    mix-blend-mode: multiply;
+    
     width: 100%;
-
-    @include mq($bp--tablet) {
-      max-width: 40vw;
-    }
+    mix-blend-mode: multiply;
+    filter: grayscale(100%);
   }
 }

@@ -1,5 +1,6 @@
 // Font Families
-$font-family: 'Steinbeck';
+$font-family--sans: 'Steinbeck';
+$font-family--serif: 'Agentur';
 
 // Font Sizes
 $font-size--sm: 14px;
@@ -11,8 +12,9 @@ $line-height--lg: 1.5em;
 $line-height--sm: 1.25em;
 
 // Colors
-$color--bg: #FFFAEE;
-$color--text: #006450;
+$color--bg: #93948C;
+$color--text: #000000;
+$color--highlight: #D0FF1C;
 
 // Breakpoints
 $bp--mobile: 375px;
