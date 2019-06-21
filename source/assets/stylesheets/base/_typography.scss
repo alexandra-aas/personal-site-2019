@@ -9,12 +9,11 @@ p {
 a {
   border-bottom: 2px dotted;
   color: inherit;
-  font-family: $font-family--serif;
   text-decoration: none;
   position: relative;
 
   &:hover {
-    background-color: $color--highlight;
+    border-bottom-style: solid;
     cursor: crosshair;
   }
 }
