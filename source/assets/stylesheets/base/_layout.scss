@@ -34,23 +34,7 @@ main {
   }
 }
 
-.headshot {
-
-  margin: 0;
-  width: 100%;
-
-  @include mq($bp--tablet) {
-    max-width: 40vw;
-  }
-
-  @include mq($bp--desktop-sm) {
-    @include position(sticky, $site-padding--lg null null);
-    width: 25%;
-  }
-}
-
 figure {
-  background-color: $color--bg;
   margin: 0;
   width: 100%;
 
@@ -64,9 +48,6 @@ figure {
   }
 
   img {
-    
     width: 100%;
-    mix-blend-mode: multiply;
-    filter: grayscale(100%);
   }
 }
